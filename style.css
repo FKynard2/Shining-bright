@@ -34,8 +34,7 @@ body {
 }
 
 #shoe-img {
-  background: url('images/pexels-katerina-holmes-5905483.jpg') no-repeat right
-    bottom;
+  background: url('images/pexels-katerina-holmes-5905483.jpg') no-repeat right;
   background-size: cover;
   height: 310px;
   width: 100%;
