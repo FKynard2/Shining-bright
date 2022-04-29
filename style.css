@@ -39,6 +39,17 @@ body {
   height: 310px;
   width: 100%;
 }
+
+.go-button {
+  background-color: #e9701f;
+  width: 100px;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
 h2,
 p {
   margin: 0;
