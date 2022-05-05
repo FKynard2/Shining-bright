@@ -41,7 +41,7 @@ $form = array(
     ),
     )
     );
-
+        mail($to)
     $processor = new FormProcessor('');
     $processor->process($form);
 
