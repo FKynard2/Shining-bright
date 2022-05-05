@@ -5,7 +5,7 @@ require_once('FormProcessor.php');
 $form = array(
     'subject' => 'New Form Submission',
     'email_message' => 'You have a new form submission',
-    'success_redirect' => 'frank@kynard2.com',
+    'success_redirect' => '',
     'sendIpAddress' => true,
     'email' => array(
     'from' => 'frank@kynard2.com',
