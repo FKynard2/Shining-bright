@@ -1,5 +1,6 @@
- .u-section-1 {
+.u-section-1 {
   background-image: none;
+  margin-bottom: 94px;
 }
 
 .u-section-1 .u-sheet-1 {
@@ -33,6 +34,25 @@
   border-style: solid;
   text-transform: uppercase;
   letter-spacing: 2px;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 10%;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3b5998;
+  color: white;
 }
 
 @media (max-width: 767px) {
