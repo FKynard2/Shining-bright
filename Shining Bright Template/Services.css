@@ -48,7 +48,6 @@
 }
 
 .u-section-1 .u-list-1 {
-  height: auto;
   width: 740px;
   margin: -636px 0 60px auto;
 }
@@ -157,8 +156,25 @@
   }
 
   .u-section-1 .u-list-1 {
+    height: auto;
     width: 610px;
     margin-bottom: 50px;
+  }
+
+  .u-section-1 .u-icon-2 {
+    padding: 10px;
+  }
+
+  .u-section-1 .u-icon-3 {
+    padding: 10px;
+  }
+
+  .u-section-1 .u-icon-4 {
+    padding: 10px;
+  }
+
+  .u-section-1 .u-icon-5 {
+    padding: 10px;
   }
 }
 
