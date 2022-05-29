@@ -5927,6 +5927,7 @@ section.u-image:not(.u-hover-box),
   .u-valign-bottom-sm {
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
 }
 @media (max-width: 575px) {

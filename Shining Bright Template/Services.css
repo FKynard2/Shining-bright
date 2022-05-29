@@ -9,7 +9,7 @@
 }
 
 .u-section-1 .u-group-1 {
-  width: 100%;
+  width: 98%;
   min-height: 495px;
   background-image: none;
   margin: 33px auto 0 0;
@@ -19,6 +19,7 @@
   padding: 30px 30px;
   background-color: #f6be05;
   border-radius: 25px;
+  width: 50%;
 }
 
 .u-section-1 .u-icon-1 {
@@ -42,11 +43,12 @@
 }
 
 .u-section-1 .u-btn-1 {
-  font-size: 1.25rem;
+  font-size: 1rem;
   border-style: solid;
   font-weight: 700;
   text-transform: uppercase;
   margin: 33px auto 0 0;
+  border-radius: 10px;
 }
 
 .u-section-1 .u-list-1 {
@@ -114,7 +116,7 @@
 
 .u-section-1 .u-container-layout-4 {
   padding: 55px 30px 30px;
-  background-color: green;
+  background-color: #00b0f0;
   border-radius: 25px;
 }
 
@@ -164,7 +166,7 @@
 }
 @media (max-width: 1199px) {
   .u-section-1 .u-group-1 {
-    width: 100%;
+    width: 97%;
   }
 
   .u-section-1 .u-list-1 {
@@ -190,6 +192,13 @@
   }
   .package-buttons {
     display: flex;
+  }
+  .side-logo-laptop {
+    width: 97%;
+  }
+  .u-section-1 .u-btn-1 {
+    font-size: 0.55rem;
+    margin-left: 13px;
   }
 }
 
@@ -237,11 +246,18 @@
   .u-section-1 .u-container-layout-5 {
     padding-top: 30px;
   }
+  .side-logo-laptop {
+    display: none;
+  }
+  .u-section-1 .u-btn-1 {
+    font-size: 0.75rem;
+    margin-left: 13px;
+  }
 }
 
 @media (max-width: 767px) {
   .u-section-1 .u-group-1 {
-    width: 380px;
+    width: 100%;
     margin-right: auto;
     margin-left: 0;
   }
@@ -273,6 +289,17 @@
   .package-buttons {
     display: flex;
     flex-direction: column;
+  }
+  .side-logo-laptop {
+    display: none;
+  }
+  .u-btn-req {
+    padding-left: 29px;
+    padding-right: 23px;
+  }
+  .u-btn-now {
+    padding-left: 34px;
+    padding-right: 35px;
   }
 }
 
