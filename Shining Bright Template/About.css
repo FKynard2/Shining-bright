@@ -22,7 +22,7 @@
 
 .u-section-1 .u-image-2 {
   min-height: 443px;
-  background-image: url('images/karmen\ kynard.jpg');
+
   background-position: 50% 50%;
 }
 
@@ -36,6 +36,7 @@
 
 .u-section-1 .u-container-layout-3 {
   padding: 30px;
+  margin-top: -130px;
 }
 
 .u-section-1 .u-text-1 {
@@ -44,6 +45,12 @@
 
 .u-section-1 .u-text-2 {
   margin: 20px 0 0;
+}
+
+.top-pic {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
 }
 
 @media (max-width: 1199px) {
