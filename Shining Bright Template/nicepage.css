@@ -5913,7 +5913,7 @@ section.u-image:not(.u-hover-box),
     flex-direction: column;
   }
 }
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 991px) and (max-width: 1199px) {
   .u-valign-middle-md,
   .u-valign-top-md,
   .u-valign-bottom-md {
@@ -5965,7 +5965,7 @@ section.u-image:not(.u-hover-box),
     justify-content: center;
   }
 }
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 991px) and (max-width: 1199px) {
   .u-valign-middle-md {
     justify-content: center;
   }
