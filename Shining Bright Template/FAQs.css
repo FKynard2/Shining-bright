@@ -1,4 +1,4 @@
- .u-section-1 {
+.u-section-1 {
   background-image: none;
 }
 
@@ -11,7 +11,7 @@
   background-image: none;
   font-weight: 400;
   text-transform: none;
-  margin: 60px auto 0;
+  margin: 0px auto 0;
 }
 
 .u-section-1 .u-text-2 {
@@ -124,7 +124,9 @@
 .u-section-1 .u-container-layout-5 {
   padding: 20px;
 }
-
+.top-img {
+  margin-bottom: 10px;
+}
 @media (max-width: 991px) {
   .u-section-1 .u-text-2 {
     width: 720px;
