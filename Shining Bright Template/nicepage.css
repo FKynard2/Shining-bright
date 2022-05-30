@@ -5880,6 +5880,7 @@ section.u-image:not(.u-hover-box),
 .u-valign-bottom {
   display: flex;
   flex-direction: column;
+  
 }
 @media (min-width: 1400px) {
   .u-valign-middle-xxl,
@@ -27007,7 +27008,7 @@ section.u-grey-5:before,
 .u-container-layout.u-container-layout.u-grey-5:before,
 .u-table-alt-grey-5 tr:nth-child(even) {
   color: black;
-  background-color: #f2f2f2;
+  background-color: #fff;
 }
 .u-button-style.u-grey-5,
 .u-button-style.u-grey-5[class*='u-border-'] {
@@ -27062,7 +27063,7 @@ section.u-grey-10:before,
 .u-container-layout.u-container-layout.u-grey-10:before,
 .u-table-alt-grey-10 tr:nth-child(even) {
   color: #111111;
-  background-color: #e5e5e5;
+  background-color: #fff;
 }
 .u-button-style.u-grey-10,
 .u-button-style.u-grey-10[class*='u-border-'] {
