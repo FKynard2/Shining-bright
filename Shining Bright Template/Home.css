@@ -11,12 +11,13 @@
   font-size: 3.5rem;
   font-weight: 700;
   margin: 77px 57px 0;
-  text-align: left;
+  text-align: center;
 }
 .u-section-1 .u-text-2 {
   font-style: italic;
   width: 833px;
-  margin: 23px auto 0;
+  margin: 0px auto 0;
+  text-align: left;
 }
 
 .u-section-1 .u-shape-1 {
@@ -27,8 +28,8 @@
 }
 
 .u-section-1 .u-layout-wrap-1 {
-  width: 759px;
-  margin: -387px auto 60px;
+  width: 980px;
+  margin: -355px auto 20px;
 }
 
 .u-section-1 .u-image-1 {
