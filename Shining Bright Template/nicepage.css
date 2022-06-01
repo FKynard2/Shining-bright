@@ -5880,7 +5880,6 @@ section.u-image:not(.u-hover-box),
 .u-valign-bottom {
   display: flex;
   flex-direction: column;
-  
 }
 @media (min-width: 1400px) {
   .u-valign-middle-xxl,
@@ -38049,7 +38048,6 @@ blockquote {
 
 .u-header .u-logo-image-1 {
   width: 175%;
-  height: 100%;
 }
 
 .u-header .u-menu-1 {
