@@ -152,7 +152,6 @@
   border-style: solid;
   font-weight: 700;
   text-transform: uppercase;
-  margin: 20px auto 0 283px;
 }
 
 @media (max-width: 1199px) {
@@ -252,6 +251,10 @@
   .u-section-1 .u-layout-cell-2 {
     min-height: 100px;
   }
+  .u-section-1 .u-btn-2 {
+    margin-left: 0;
+    left: 41%;
+  }
 }
 
 @media (max-width: 575px) {
@@ -300,6 +303,7 @@
 
   .u-section-1 .u-btn-2 {
     margin-left: 0;
+    left: 36%;
   }
 }
 .u-section-2 .u-sheet-1 {
