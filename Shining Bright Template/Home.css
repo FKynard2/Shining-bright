@@ -66,8 +66,30 @@
 .u-btn-req {
   position: absolute;
   z-index: 10;
-  right: 48%;
-  top: 63%;
+  right: 45%;
+  top: 32%;
+  border-radius: 10px;
+  border: 1px solid;
+}
+.footer-block-1 {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  text-align: left;
+}
+.footer-logo {
+  width: 65%;
+  margin: 10px 0px;
+}
+
+.bottom-contianer {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.footer-email {
+  background-color: #333333;
+  color: white;
 }
 
 .fa {
