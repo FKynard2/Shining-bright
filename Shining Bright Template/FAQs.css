@@ -127,6 +127,9 @@
 .top-img {
   margin-bottom: 10px;
 }
+.top-image {
+  width: 50%;
+}
 @media (max-width: 991px) {
   .u-section-1 .u-text-2 {
     width: 720px;

@@ -78,6 +78,12 @@
 .header-mock {
   font-weight: bolder;
 }
+.top-image {
+  width: 100%;
+}
+.u-btn-req {
+  border-radius: 10px;
+}
 @media (max-width: 1199px) {
   .u-section-1 .u-sheet-1 {
     min-height: 778px;
@@ -147,10 +153,6 @@
 }
 
 @media (max-width: 767px) {
-  .u-section-1 .u-sheet-1 {
-    min-height: 2243px;
-  }
-
   .u-section-1 .u-text-1 {
     width: auto;
     margin-left: 0;
@@ -209,10 +211,6 @@
 }
 
 @media (max-width: 575px) {
-  .u-section-1 .u-sheet-1 {
-    min-height: 1336px;
-  }
-
   .u-section-1 .u-text-1 {
     font-size: 1.5rem;
   }

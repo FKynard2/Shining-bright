@@ -13,8 +13,8 @@
 }
 
 .u-section-1 .u-form-1 {
-  width: 40%;
-  margin: 30px auto 60px;
+  width: 24%;
+  /* margin: 30px auto 60px; */
 }
 
 .u-section-1 .u-input-1 {
@@ -36,7 +36,7 @@
   letter-spacing: 2px;
 }
 .address-box {
-  font-size: 2rem;
+  font-size: 1.5rem;
 
   color: rgba(110, 110, 110, 0.801);
 }
@@ -57,9 +57,12 @@
   display: flex;
   flex-direction: row;
   text-align: left;
+  line-height: normal;
+  justify-content: space-evenly;
 }
 .just-margin {
   margin-top: 65px;
+  width: 22%;
 }
 
 .fa {
@@ -80,7 +83,14 @@
   background: #3b5998;
   color: white;
 }
-
+@media (max-width: 1199px) {
+  .u-section-1 .u-form-1 {
+    width: 40%;
+  }
+  .just-margin {
+    width: 40%;
+  }
+}
 @media (max-width: 767px) {
   .u-section-1 .u-form-1 {
     width: 540px;
@@ -96,12 +106,25 @@
   .just-margin {
     display: flex;
     justify-content: center;
-    margin-top: -30px;
+    width: 100%;
+  }
+  .u-section-1 .u-form-1 {
+    width: 90%;
+    margin-left: 45px;
+  }
+  .header-center {
+    display: flex;
+    justify-content: center;
   }
 }
 
 @media (max-width: 575px) {
   .u-section-1 .u-form-1 {
-    width: 340px;
+    width: 100%;
+    margin-left: 0px;
+  }
+  .header-center {
+    display: flex;
+    justify-content: center;
   }
 }
