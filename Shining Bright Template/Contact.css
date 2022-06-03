@@ -83,6 +83,47 @@
   background: #3b5998;
   color: white;
 }
+.fa-twitter {
+  background: #55acee;
+  color: white;
+}
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+.contact-center {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+.footer-block-1 {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  text-align: left;
+}
+.footer-logo {
+  width: 65%;
+  margin: 10px 0px;
+}
+
+.bottom-contianer {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.footer-email {
+  background-color: #333333;
+  color: white;
+}
+.connect-margin {
+  margin: 20px;
+}
 @media (max-width: 1199px) {
   .u-section-1 .u-form-1 {
     width: 40%;
@@ -126,5 +167,18 @@
   .header-center {
     display: flex;
     justify-content: center;
+  }
+  .bottom-contianer {
+    flex-direction: column;
+  }
+  .footer-logo {
+    width: 45%;
+    min-width: 45%;
+  }
+  .footer-block-1 {
+    align-items: center;
+  }
+  .footer-email {
+    text-align: center;
   }
 }
