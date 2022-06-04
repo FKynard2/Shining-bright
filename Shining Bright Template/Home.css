@@ -67,10 +67,14 @@
 .u-btn-req {
   position: absolute;
   z-index: 10;
-  right: 45%;
-  top: 32%;
-  border-radius: 10px;
+  right: 46%;
+  top: 37%;
+  border-radius: 20px;
   border: 1px solid;
+  font-size: 2rem;
+  padding-inline: 22px;
+  background-color: #9063cd;
+  color: #3c5997;
 }
 .footer-block-1 {
   display: flex;
@@ -153,7 +157,55 @@
   font-weight: 700;
   text-transform: uppercase;
 }
+.blog-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 600px;
+  margin-block: 20px;
+  border: 2px solid red;
+}
+.blog-card {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  max-width: 340px;
+  min-width: 330px;
+  height: 485px;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: blue;
+  flex-wrap: wrap;
+}
+.blog-image {
+  width: 88%;
+  height: 132px;
+  margin: 10px 20px;
+  border-radius: 2px;
+}
 
+.p-blog {
+  margin: 10px 20px;
+  color: white;
+}
+.blog-btn {
+  margin-left: 20px;
+}
+@media (max-width: 1500px) {
+  .u-btn-req {
+    position: absolute;
+    z-index: 10;
+    right: 43%;
+    top: 35%;
+    border-radius: 20px;
+    border: 1px solid;
+    font-size: 2rem;
+    padding-inline: 22px;
+    background-color: #9be3ff;
+  }
+}
 @media (max-width: 1199px) {
   .u-section-1 .u-sheet-1 {
     min-height: 805px;
@@ -171,6 +223,16 @@
 
   .u-section-1 .u-layout-cell-2 {
     min-height: 359px;
+  }
+  .u-btn-req {
+    position: absolute;
+    z-index: 10;
+    right: 46%;
+    top: 36%;
+    border-radius: 10px;
+    border: 1px solid;
+    padding-inline: 5px;
+    font-size: 1rem;
   }
 }
 
@@ -220,6 +282,22 @@
   .u-section-1 .u-btn-2 {
     margin-left: 34px;
   }
+  .u-btn-req {
+    position: absolute;
+    z-index: 10;
+    right: 47%;
+    top: 35%;
+    border-radius: 10px;
+    border: 1px solid;
+    padding-inline: 5px;
+  }
+  .blog-box {
+    flex-direction: column;
+    height: auto;
+  }
+  .blog-card {
+    margin-top: 10px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -254,6 +332,16 @@
   .u-section-1 .u-btn-2 {
     margin-left: 0;
     left: 41%;
+  }
+  .u-btn-req {
+    position: absolute;
+    z-index: 10;
+    right: 46%;
+    top: 34%;
+    border-radius: 8px;
+    border: 1px solid;
+    font-size: 0.75rem;
+    padding-inline: 5px;
   }
 }
 
@@ -317,6 +405,16 @@
   }
   .footer-email {
     text-align: center;
+  }
+  .u-btn-req {
+    position: absolute;
+    z-index: 10;
+    right: 41%;
+    left: 41%;
+    top: 35%;
+    border-radius: 10px;
+    border: 1px solid;
+    font-size: 0.5rem;
   }
 }
 .u-section-2 .u-sheet-1 {
