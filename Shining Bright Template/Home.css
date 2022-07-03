@@ -197,13 +197,13 @@
   .u-btn-req {
     position: absolute;
     z-index: 10;
-    right: 43%;
-    top: 35%;
+    right: 46%;
+    top: 62%;
     border-radius: 20px;
     border: 1px solid;
-    font-size: 2rem;
+    font-size: 1.5rem;
     padding-inline: 22px;
-    background-color: #9be3ff;
+    background-color: #d58475;
   }
 }
 @media (max-width: 1199px) {
