@@ -67,13 +67,13 @@
 .u-btn-req {
   position: absolute;
   z-index: 10;
-  right: 46%;
-  top: 37%;
+  right: 48%;
+  top: 64%;
   border-radius: 20px;
   border: 1px solid;
-  font-size: 2rem;
+  font-size: 1.5rem;
   padding-inline: 22px;
-  background-color: #9063cd;
+  background-color: #d58475;
   color: #3c5997;
 }
 .footer-block-1 {
@@ -227,8 +227,8 @@
   .u-btn-req {
     position: absolute;
     z-index: 10;
-    right: 46%;
-    top: 36%;
+    right: 48%;
+    top: 65%;
     border-radius: 10px;
     border: 1px solid;
     padding-inline: 5px;
@@ -285,8 +285,8 @@
   .u-btn-req {
     position: absolute;
     z-index: 10;
-    right: 47%;
-    top: 35%;
+    right: 48%;
+    top: 63%;
     border-radius: 10px;
     border: 1px solid;
     padding-inline: 5px;
@@ -336,8 +336,8 @@
   .u-btn-req {
     position: absolute;
     z-index: 10;
-    right: 46%;
-    top: 34%;
+    right: 47%;
+    top: 61%;
     border-radius: 8px;
     border: 1px solid;
     font-size: 0.75rem;
@@ -409,9 +409,9 @@
   .u-btn-req {
     position: absolute;
     z-index: 10;
-    right: 41%;
+    right: 43%;
     left: 41%;
-    top: 35%;
+    top: 60%;
     border-radius: 10px;
     border: 1px solid;
     font-size: 0.5rem;
