@@ -178,13 +178,13 @@
   flex-wrap: wrap;
 }
 .first-spot {
-  background-color: red;
+  background-color: #e10199;
 }
 .second-spot {
-  background-color: rgb(21, 255, 0);
+  background-color:  #00b0f0;
 }
 .third-spot {
-  background-color: rgb(204, 0, 255);
+  background-color: #fe5103;
 }
 .blog-image {
   width: 88%;
