@@ -163,3 +163,89 @@ input[type='submit'] {
     font-size: 16px;
   }
 }
+
+/* Back End Login */
+.container {
+  margin: 10% 85%;
+  width: 100%;
+  padding: 100px;
+  border: 3px solid #e9701f;
+  cursor: default;
+  border-radius: 3px;
+}
+
+h2 {
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: larger;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 8px 16px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+
+button[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.atag {
+  width: 100px;
+}
+.backendHome {
+  border: 1px solid #302727;
+  background: grey;
+  padding: 10px;
+  color: black;
+  border-radius: 20px;
+}
+.login {
+  display: flex;
+  flex-wrap: wrap;
+}
+.loginP {
+  font-size: 35px;
+  color: #9063cd;
+}
+.loginA {
+  text-decoration: none;
+  color: #9063cd;
+}
+.loginLogo {
+  margin: 20px 20px
+}
+
+/* BackEnd */
+body.backEnd {
+  display: revert
+}
+.topLogo {
+  margin: 10px 10px 10px 10px
+}
+.pageButton {
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 10px;
+  text-decoration: none;
+  background-color: grey;
+  color: black;
+}
