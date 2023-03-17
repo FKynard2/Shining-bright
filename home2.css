@@ -75,7 +75,9 @@ h2 hr {
 .home2-sec5{
     margin: 50px;
 }
-
+.border-bottom {
+    border-bottom: 5px solid black;
+}
 .home2-sec5 .fa-facebook{
     background-color: transparent;
     font-size: 28px;
@@ -235,4 +237,6 @@ a span:nth-child(4){
         bottom: 100%;
     }
 }
+
+
 }
