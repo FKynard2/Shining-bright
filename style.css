@@ -184,8 +184,8 @@ label {
   font-size: larger;
 }
 
-input[type="text"],
-input[type="password"] {
+input[type='text'],
+input[type='password'] {
   width: 100%;
   padding: 8px 16px;
   margin-bottom: 10px;
@@ -193,8 +193,8 @@ input[type="password"] {
   border-radius: 4px;
 }
 
-button[type="submit"] {
-  background-color: #4CAF50;
+button[type='submit'] {
+  background-color: #4caf50;
   color: white;
   padding: 8px 16px;
   border: none;
@@ -203,7 +203,7 @@ button[type="submit"] {
   width: 100%;
 }
 
-button[type="submit"]:hover {
+button[type='submit']:hover {
   background-color: #45a049;
 }
 
@@ -230,17 +230,17 @@ button[type="submit"]:hover {
   color: #9063cd;
 }
 .loginLogo {
-  margin: 20px 20px
+  margin: 20px 20px;
 }
 
 /* BackEnd */
 body.backEnd {
-  display: revert
+  display: revert;
 }
 .topLogo {
   margin: -210px 10px 210px 10px;
-  text-align : center;
-  font-size: 64px
+  text-align: center;
+  font-size: 64px;
 }
 .pageButton {
   border: 1px solid black;
@@ -251,3 +251,5 @@ body.backEnd {
   background-color: grey;
   color: black;
 }
+
+
