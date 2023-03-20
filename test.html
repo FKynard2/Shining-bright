@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        $(".mobile-app").slick({
+  autoplay: false,
+  fade: true,
+  dots: false,
+  arrows: false
+});
+    </script>
+    <style>
+        .mobile-app {
+  position: relative;
+  max-width: 304px;
+  margin: auto;
+  overflow: hidden;
+}
+.mobile-app::after {
+  content: "";
+  background-image: url(https://sudip-bhowmick.github.io/images/img/iphone-mockup.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: hidden;
+}
+.mobile-app .app-screen {
+  margin: auto;
+  border-radius: 15%;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 5px;
+}
+    </style>
+</head>
+<body>
+    <div class="mobile-app">
+        <div>
+         
+        </div>
+        <div>
+       
+        </div>
+        <div>
+          <img src="https://dummyimage.com/300x600/ff4040/ffffff.jpg&text=Screen+3" alt="screen3" class="app-screen">
+        </div>
+      </div>
+</body>
+</html>
