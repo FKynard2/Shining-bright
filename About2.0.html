@@ -14,7 +14,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <link rel="stylesheet" href="About2.0.css">
+    <link rel="stylesheet" href="About2.0.css" />
     <script
       class="u-script"
       type="text/javascript"
@@ -47,16 +47,12 @@
     <meta property="og:type" content="website" />
   </head>
 
-
   <body class="u-body u-xl-mode">
-    <style>
-   
-
-    </style>
-    <div class="container container-1">
+    <style></style>
+    <div class="container"></div>
+    <div class="">
       <header class="u-clearfix u-header u-header" id="sec-9623">
         <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
-          <a href="login.html" style="display: contents; height: 20px; width: 20px;"><img src="images/favicon.png" style="height: 100px; width: 100px; margin: 10px;" /></a>
           <!-- <a
             href="/"
             class="u-image u-logo u-image-1"
@@ -196,99 +192,181 @@
         </div>
       </header>
       <style>
-      
-       @media (min-width: 900px) {
-        .sec-split{
+        @media (min-width: 900px) {
+          .u-section-1 .u-text-1 {
+            margin: 40px auto 0px -139px;
+          }
+          .head-photo {
+            height: 115px;
+            width: 21%;
+            margin-left: 37%;
+          }
+          .u-section-1 .u-container-layout-3 {
+            padding: 30px;
+            margin-top: -175px;
+          }
+          .u-header .u-sheet-1 {
+            min-height: 80px;
+            margin-top: 80px;
+          }
+          .container {
+            position: absolute;
+            background-color: #dfd5ca;
+            clip-path: polygon(0% 0%, 57% 0, 42% 51%, 57% 100%, 0% 100%);
+            width: 100%;
+            height: 100%;
+          }
+          .sec-split {
+            display: flex;
+            width: 100%;
+          }
+          .sec-split-1,
+          .sec-split-2 {
+            width: 50%;
+          }
+          .sec-split-1 {
+            padding-right: 130px;
+            padding-left: 10px;
+          }
+          .sec-split-2 {
+            padding-right: 10px;
+            padding-left: 130px;
+          }
+          .top-pic {
+            position: absolute;
+            z-index: 1;
+            left: 50%;
+            transform: translateX(-50%);
+            margin-top: 0;
+          }
+
+          .top-pic::after {
+            content: '';
+            background-image: url(https://sudip-bhowmick.github.io/images/img/iphone-mockup.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            overflow: hidden;
+          }
+          .top-pic .app-screen {
+            margin: auto;
+            border-radius: 15%;
+            width: 92%;
+            box-sizing: border-box;
+            padding: 5px;
+            height: 65vh;
+          }
+
+          .T96P6A {
+            width: 200px;
+
+            margin-top: 5%;
+          }
+        }
+
+        .head-photo {
+          height: 115px;
+          width: 21%;
+          margin-left: 37%;
+        }
+        .u-header {
+          padding-bottom: 50px;
+        }
+
+        .p-style {
+          text-align: center;
+          font-weight: 600;
+        }
+
+        .u-container-layout .p-style {
+          font-weight: 800;
+        }
+
+        span {
+          font-weight: 700;
+        }
+
+        .u-text-2 {
+          text-align: center;
+          font-size: 18px;
+        }
+        .u-grey-5 {
+          background-color: transparent;
+        }
+        .u-section-1 .u-text-1 {
+          margin: 40px auto 0px -139px;
+        }
+
+        .app-screen {
+          width: 100px;
+          border-radius: 50%;
+        }
+
+        .top-pic {
+          margin-top: 0px;
+        }
+
+        .u-section-1 .u-sheet-1 {
+          min-height: 0;
+        }
+        .circle-img-wrap {
           display: flex;
-          width: 100%;
+          justify-content: center;
         }
-       .sec-split-1, .sec-split-2 {
-        width: 50%;
-       }
-       .sec-split-1 {
-        padding-right: 130px;
-        padding-left: 10px
-       }
-       .sec-split-2 {
-        padding-right: 10px;
-        padding-left: 130px
-       }
-       .top-pic {
-      position: absolute;
-      z-index: 1;
-      left: 50%;
-      transform: translateX(-50%);
-      margin-top: 0;
-      }
-      
-      .top-pic::after {
-      content: "";
-      background-image: url(https://sudip-bhowmick.github.io/images/img/iphone-mockup.png);
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-position: center;
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      pointer-events: none;
-      overflow: hidden;
+
+        @media (max-width: 899px) {
+          .u-section-1 .u-text-1 {
+            margin: 40px auto 0px 33%;
+          }
+          .u-section-1 {
+            background-image: none;
+            padding: 15px;
+            margin-bottom: -95px;
+          }
+          .app-screen {
+            border: 5px solid black;
+            z-index: 2;
+          }
+
+          .u-header {
+            padding-bottom: 50px;
+            padding-top: 50px;
+          }
+
+          .container {
+            position: absolute;
+            background-color: #dfd5ca;
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
+            width: 100%;
+            height: 56%;
+          }
+          .T96P6A {
+            margin-top: 10px;
+          }
+          .sec-split {
+            display: flex;
+            flex-direction: column;
+          }
         }
-        .top-pic .app-screen {
-      margin: auto;
-      border-radius: 15%;
-      width: 92%;
-      box-sizing: border-box;
-      padding: 5px;
-      height: 65vh;
+        @media (max-width: 400px) {
+          .container {
+            height: 54%;
+          }
+          .head-photo {
+            height: 115px;
+            width: 40%;
+            margin-left: 27%;
+          }
         }
-      
-        h1.p-style {
-        margin-top: 60px;
-      }
-      
-      
-      .T96P6A {
-        width: 200px;
-        margin-left: 40%;
-        margin-top: 5%;
-      }
-       }
-      
-      .u-header{
-      background-color: #dfd5ca;
-      padding-bottom: 50px;
-      
-      }
-      
-      .p-style {
-      text-align: center;
-      font-weight: 600;
-      }
-      
-      .u-container-layout .p-style{
-      font-weight: 800;
-         
-      }
-      
-      
-      
-      span {
-      font-weight: 700;
-      }
-      
-      .u-text-2{
-      text-align: center;
-      font-size: 18px;
-      }
-      .u-grey-5{
-        background-color: none;
-      }
-     
       </style>
       <div class="sec-split">
-        <section class="u-clearfix u-grey-5 u-section-1 sec-split-1" id="sec-bcab" style="background-color: #dfd5ca;">
+        <section class="u-clearfix u-section-1 sec-split-1" id="sec-bcab">
           <div class="u-clearfix u-valign-middle u-sheet-1">
             <div
               class="u-clearfix u-expanded-width u-gutter-0 u-layout-wrap u-layout-wrap-1"
@@ -299,36 +377,40 @@
                   src=""
                 >
                   <div class="u-container-layout u-container-layout-3">
-      
-      
-      
+                    <a
+                      href="login.html"
+                      style="display: contents; height: 20px; width: 20px"
+                      ><img src="images/favicon.png" class="head-photo"
+                    /></a>
+
                     <h1 class="p-style">OUR CEO & FOUNDER</h1>
                     <p class="p-style">
-                      Karmen Kynard, originally from Toledo, Ohio started tutoring
-                      in January 2017. She started simply because she wanted to
-                      provide a service to students. She is a certified educator for
-                      grades K-12 and has served students in both general education
-                      and special education settings. She graduated with her
-                      Master’s in Education from Bowling Green State University in
-                      Ohio with a focus on Special Education. Her specialty is
-                      working with struggling learners in all core subjects.
-                      Continuing her education gained her another Master's in
-                      Education for Educational Leadership.
+                      Karmen Kynard, originally from Toledo, Ohio started
+                      tutoring in January 2017. She started simply because she
+                      wanted to provide a service to students. She is a
+                      certified educator for grades K-12 and has served students
+                      in both general education and special education settings.
+                      She graduated with her Master’s in Education from Bowling
+                      Green State University in Ohio with a focus on Special
+                      Education. Her specialty is working with struggling
+                      learners in all core subjects. Continuing her education
+                      gained her another Master's in Education for Educational
+                      Leadership.
                     </p>
                     <p class="p-style">
-                      Over the course of her career she has had the opportunity to
-                      (change font?)work at schools located in 4 different states
-                      (Ohio, Wisconsin, Louisiana, and Texas) and 6 different cities
-                      (Toledo, Cleveland, Milwaukee, Baton Rouge, Lafayette,
-                      Austin). Due to teaching in multiple states, she has learned
-                      flexibility and how to adapt to differing state standards and
-                      curriculums.
+                      Over the course of her career she has had the opportunity
+                      to (change font?)work at schools located in 4 different
+                      states (Ohio, Wisconsin, Louisiana, and Texas) and 6
+                      different cities (Toledo, Cleveland, Milwaukee, Baton
+                      Rouge, Lafayette, Austin). Due to teaching in multiple
+                      states, she has learned flexibility and how to adapt to
+                      differing state standards and curriculums.
                     </p>
                     <p class="p-style">
-                      While she enjoyed tutoring, she realized that she could have a
-                      much larger impact if she started accepting and working with
-                      more tutors to support students and that when Shining Bright
-                      Tutors was born.
+                      While she enjoyed tutoring, she realized that she could
+                      have a much larger impact if she started accepting and
+                      working with more tutors to support students and that when
+                      Shining Bright Tutors was born.
                     </p>
                   </div>
                 </div>
@@ -337,13 +419,9 @@
           </div>
         </section>
         <div class="top-pic">
-          <img
-            src="images/karmens photo2.jpg"
-            alt=""
-            class="app-screen"
-          />
+          <img src="images/karmens photo2.jpg" alt="" class="app-screen" />
         </div>
-        <section class="u-clearfix u-grey-5 u-section-1 sec-split-2" id="sec-bcab">
+        <section class="u-clearfix u-section-1 sec-split-2" id="sec-bcab">
           <div class="u-clearfix u-valign-middle u-sheet-1">
             <div
               class="u-clearfix u-expanded-width u-gutter-0 u-layout-wrap u-layout-wrap-1"
@@ -354,25 +432,42 @@
                   src=""
                 >
                   <div class="u-container-layout u-container-layout-3">
-                    <h1 class="u-text u-text-default u-text-1 p-style">About Us</h1>
+                    <h1 class="u-text u-text-default u-text-1 p-style">
+                      ABOUT US
+                    </h1>
                     <p class="u-text u-text-2">
-                      Shining Bright Tutors LLC is a tutoring company that places
-                      importance on student achievement first. Our goal is to CREATE
-                      BRIGHT FUTURES! We aim to serve students online in grades K-12
-                      across the United States. We specialize in one on one tutoring
-                      covering all core subjects and including Test Prep for state
-                      and district assessments as well as the college entry exams
-                      (SAT and ACT).
+                      Shining Bright Tutors LLC is a tutoring company that
+                      places importance on student achievement first. Our goal
+                      is to CREATE BRIGHT FUTURES! We aim to serve students
+                      online in grades K-12 across the United States. We
+                      specialize in one on one tutoring covering all core
+                      subjects and including Test Prep for state and district
+                      assessments as well as the college entry exams (SAT and
+                      ACT).
                     </p>
-                    <img class="T96P6A" crossorigin="anonymous" src="https://media-public.canva.com/_a8sA/MAE829_a8sA/1/t.png" draggable="false" alt="vision mission icon" style="object-fit: fill;">
+                    <div class="circle-img-wrap">
+                      <img
+                        class="T96P6A"
+                        crossorigin="anonymous"
+                        src="https://media-public.canva.com/_a8sA/MAE829_a8sA/1/t.png"
+                        draggable="false"
+                        alt="vision mission icon"
+                        style="object-fit: fill"
+                      />
+                    </div>
                     <p>
                       <span>OUR MISSION</span>
-                      is to provide academic support for students who are struggling or want to solidify their content knowledge by creating goals,
-                       developing a personalized plan, and providing individualized tutoring services in a virtual setting.
+                      is to provide academic support for students who are
+                      struggling or want to solidify their content knowledge by
+                      creating goals, developing a personalized plan, and
+                      providing individualized tutoring services in a virtual
+                      setting.
                     </p>
-                    <p><span>OUR VISION</span> is to make tutoring accessible to anyone who needs it across the country.</p>
+                    <p>
+                      <span>OUR VISION</span> is to make tutoring accessible to
+                      anyone who needs it across the country.
+                    </p>
                     <!-- <video style="width: 300px; height: 300px;" controls > <source src="https://video-public.canva.com/VAEXazshK64/v/3229262fa4.mp4"></video> -->
-      
                   </div>
                 </div>
               </div>
