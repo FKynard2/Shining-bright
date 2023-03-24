@@ -206,12 +206,52 @@
         font-size: 48px;
         color: #8e64c9;
       }
+
+      .hero-paragraph{
+        color: #8e64c9;
+        margin: 300px;
+      }
+
+      .package{
+        display: flex;
+        margin: 100px 250px;
+        justify-content: space-between;
+        gap: 15px;
+      }
+      .package-list{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-width: 250px;
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.3);
+        border: 2px solid #ec5db55e;
+        border-radius: 10px;
+        list-style: none;
+        padding: 10px;
+        color: #8e64c9;
+      }
+      .package-header{
+        font-family: "Petit Formal Script";
+        transform: rotate(345deg);
+      }
+      .package-header-font{
+        font-size: 45px;
+      }
+      .package-button{
+        border: 2px solid #8e64c9;
+        color: #ec5db5;
+        border-radius: 20px;
+        width: 120px;
+        padding: 4px;
+        text-align: center;
+        text-decoration: underline;
+      }
       </style>
     <div class="hero">
       <img src="images/side logo for services.jpg" alt="" class="side-hero-logo">
       <h1 class="hero-header">Elementary School Tutoring</h1>
       <img class="icon-1st" crossorigin="anonymous" src="https://media-public.canva.com/b92yo/MAD_Trb92yo/1/t.png" draggable="false" alt="Hand Drawn Girl Saying Hello to Her Online Class" style="object-fit: fill;">
-      <p>
+      <p class="hero-paragraph">
         Petit Formal Script
         Are you seeking extra assistance for your elementary school child (grades
         K-5) in the classroom? Look no further! Shining Bright Tutors is a company
@@ -223,7 +263,33 @@
         needs, feel free to contact us!
       </p>
     </div>
-
+<ul class="package">
+  <li class="package-list">
+    <h4 class="package-header package-header-font">Hourly</h4>
+    <p>Don't know how many hours you need or want to pay for one hour at a time? Choose this hourly rate. $45/hr.</p>
+    <a href="" class="package-button">Select</a>
+  </li>
+  <li class="package-list">
+    <h4 class="package-header">5 Hour <br> Package</h4>
+    <p>Don't know how many hours you need or want to pay for one hour at a time? Choose this hourly rate. $45/hr.</p>
+    <a href="" class="package-button">Select</a>
+  </li>
+  <li class="package-list">
+    <h4 class="package-header">10 Hour <br> Package</h4>
+    <p>Don't know how many hours you need or want to pay for one hour at a time? Choose this hourly rate. $45/hr.</p>
+    <a href="" class="package-button">Select</a>
+  </li>
+  <li class="package-list">
+    <h4 class="package-header">15 Hour <br> Package</h4>
+    <p>Don't know how many hours you need or want to pay for one hour at a time? Choose this hourly rate. $45/hr.</p>
+    <a href="" class="package-button">Select</a>
+  </li>
+  <li class="package-list">
+    <h4 class="package-header">20 Hour <br> Package</h4>
+    <p>Don't know how many hours you need or want to pay for one hour at a time? Choose this hourly rate. $45/hr.</p>
+    <a href="" class="package-button">Select</a>
+  </li>
+</ul>
     <footer
       class="u-align-center u-clearfix u-footer u-grey-80 u-footer"
       id="sec-1144"
