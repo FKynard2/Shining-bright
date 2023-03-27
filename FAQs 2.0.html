@@ -234,14 +234,6 @@
         border-radius: 50%;
         color: #ec5db5;
       }
-      /* .faq-wrapper-middle .box:nth-of-type(1),
-                  .faq-wrapper-middle .box:nth-of-type(3) {
-                    margin-top: 125px;
-                  }
-
-                  .faq-wrapper-middle .box:nth-of-type(4) {
-                    margin-top: -150px;
-                  } */
 
       .hero .faq-wrapper-middle {
         margin-bottom: 85px;
@@ -308,11 +300,11 @@
         height: 50%;
       }
       .box .back .row:nth-of-type(1) {
-        background: #ec5db5;
+        background: #f6d2e8;
         border-bottom: 10px solid #fe4f02;
         box-sizing: border-box;
         text-align: center;
-        line-height: 150px;
+        line-height: 75px;
         border-radius: 10px 10px 0px 0px;
       }
       .box .back .row:nth-of-type(2) {
@@ -323,11 +315,11 @@
       }
 
       .box .back .row img {
-        width: 100px;
-        height: 100px;
+        width: 350px;
+        height: 220px;
         display: inline-block;
         vertical-align: top;
-        margin-top: 28px;
+
         margin-right: 28px;
       }
       .box .back .row h1 {
@@ -337,6 +329,7 @@
         display: inline-block;
         font-family: 'Gloria Hallelujah', cursive;
         text-transform: uppercase;
+        margin: 0;
       }
       .box .back .row span {
         position: relative;
@@ -378,6 +371,9 @@
       }
 
       @media (max-width: 1300px) {
+        .hero {
+          gap: 100px;
+        }
         .box {
           width: 190px;
           height: 190px;
@@ -387,6 +383,17 @@
         }
         .top-image {
           height: 80vh;
+        }
+        /* This is for the backcard */
+        .box .back {
+          width: 65%;
+          height: 63%;
+        }
+        .box .back .row h1 {
+          font-size: 36px;
+        }
+        .box .back .row img {
+          height: 180px;
         }
       }
       @media (max-width: 1200px) {
@@ -417,6 +424,16 @@
         }
         .hero .faq-wrapper-middle {
           margin-bottom: 220px;
+        }
+        /* This is for the backcard */
+        .box .back .row h1 {
+          font-size: 30px;
+        }
+        .box .back .row span {
+          padding: 0;
+        }
+        .box .back .row:nth-of-type(2) {
+          padding: 10px 20px;
         }
       }
       @media (max-width: 1000px) {
@@ -450,6 +467,25 @@
           margin-bottom: 0px;
           height: 55vh;
         }
+        /* This is for the backcard */
+        .box .back .row img {
+          width: 240px;
+          height: 105px;
+        }
+        .box .back .row h1 {
+          font-size: 22px;
+        }
+        .box .back .row:nth-of-type(1) {
+          border-bottom: 4px solid #fe4f02;
+          text-align: center;
+          line-height: 11px;
+        }
+        .box .back .row span {
+          font-size: 14px;
+        }
+        .box .back .row:nth-of-type(2) {
+          padding: 10px 10px;
+        }
       }
       @media (max-width: 700px) {
         .hero {
@@ -481,6 +517,20 @@
         .hero-wraper {
           padding-left: 30px;
           padding-top: 30px;
+        }
+        /* This is for the backcard */
+        .box .back .row img {
+          width: 215px;
+          height: 95px;
+        }
+        .box .back .row h1 {
+          font-size: 15px;
+        }
+        .box .back .row span {
+          font-size: 12px;
+        }
+        .box .back .row:nth-of-type(2) {
+          padding: 4px 4px;
         }
       }
       @media (max-width: 480px) {
@@ -516,14 +566,14 @@
           top: 2%;
           width: 65%;
           height: 100%;
-          transition: 2.5s;
+          transition: 1s;
           z-index: 3;
         }
         .box .back .row h1 {
           font-size: 12px;
           display: revert;
           padding: 0px;
-          margin: 0;
+          margin-top: 30px;
         }
         .box .back .row span {
           font-size: 12px;
@@ -578,7 +628,10 @@
           </div>
           <div class="back">
             <div class="row">
-              <img src="images/logo small.png" alt="" />
+              <img
+                src="images/customcolor_logo_transparent_background.png"
+                alt=""
+              />
               <h1>Where does tutoring take place?</h1>
             </div>
             <div class="row">
@@ -603,7 +656,10 @@
           </div>
           <div class="back">
             <div class="row">
-              <img src="images/logo small.png" alt="" />
+              <img
+                src="images/customcolor_logo_transparent_background.png"
+                alt=""
+              />
               <h1>Are you able to tutor in person?</h1>
             </div>
             <div class="row">
@@ -629,7 +685,10 @@
           </div>
           <div class="back">
             <div class="row">
-              <img src="images/logo small.png" alt="" />
+              <img
+                src="images/customcolor_logo_transparent_background.png"
+                alt=""
+              />
               <h1>What do I need for tutoring?</h1>
             </div>
             <div class="row">
@@ -657,7 +716,10 @@
             </div>
             <div class="back">
               <div class="row">
-                <img src="images/logo small.png" alt="" />
+                <img
+                  src="images/customcolor_logo_transparent_background.png"
+                  alt=""
+                />
                 <h1>Where does tutoring take place?</h1>
               </div>
               <div class="row">
@@ -682,7 +744,10 @@
             </div>
             <div class="back">
               <div class="row">
-                <img src="images/logo small.png" alt="" />
+                <img
+                  src="images/customcolor_logo_transparent_background.png"
+                  alt=""
+                />
                 <h1>Are you able to tutor in person?</h1>
               </div>
               <div class="row">
@@ -711,7 +776,10 @@
             </div>
             <div class="back">
               <div class="row">
-                <img src="images/logo small.png" alt="" />
+                <img
+                  src="images/customcolor_logo_transparent_background.png"
+                  alt=""
+                />
                 <h1>What do I need for tutoring?</h1>
               </div>
               <div class="row">
@@ -736,7 +804,10 @@
             </div>
             <div class="back">
               <div class="row">
-                <img src="images/logo small.png" alt="" />
+                <img
+                  src="images/customcolor_logo_transparent_background.png"
+                  alt=""
+                />
                 <h1>What do I need for tutoring?</h1>
               </div>
               <div class="row">
@@ -764,7 +835,10 @@
           </div>
           <div class="back">
             <div class="row">
-              <img src="images/logo small.png" alt="" />
+              <img
+                src="images/customcolor_logo_transparent_background.png"
+                alt=""
+              />
               <h1>Where does tutoring take place?</h1>
             </div>
             <div class="row">
@@ -789,7 +863,10 @@
           </div>
           <div class="back">
             <div class="row">
-              <img src="images/logo small.png" alt="" />
+              <img
+                src="images/customcolor_logo_transparent_background.png"
+                alt=""
+              />
               <h1>Are you able to tutor in person?</h1>
             </div>
             <div class="row">
@@ -816,7 +893,10 @@
           </div>
           <div class="back">
             <div class="row">
-              <img src="images/logo small.png" alt="" />
+              <img
+                src="images/customcolor_logo_transparent_background.png"
+                alt=""
+              />
               <h1>
                 Are 30-minute tutoring <br />
                 sessions available?
