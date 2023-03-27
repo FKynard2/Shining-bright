@@ -195,37 +195,34 @@
     <style>
       .hero {
         width: 100%;
-        height: 83vh;
+        height: 100vh;
         position: relative;
         display: flex;
         justify-content: center;
-        gap: 70px
+        gap: 140px;
       }
       .top-image {
         position: absolute;
-        width: 66%;
-        height: 65vh;
-        top: 50%;
+        width: 100%;
+        height: 100vh;
+        top: 45%;
         left: 50%;
         transform: translate(-50%, -50%);
         z-index: -1;
-        /* opacity: 0.4; */
-        filter: brightness(187%)
+        filter: brightness(187%);
       }
 
       .faq-wrapper {
         display: flex;
         flex-direction: column;
-        gap: 15px;
+        gap: 50px;
       }
       .faq-wrapper-middle {
         display: flex;
-        flex-wrap: wrap;
         justify-content: center;
         width: 45%;
-        gap: 65px;
-        align-content: center;
-        
+        flex-direction: column;
+        align-items: center;
       }
       .faq-bubble {
         list-style: none;
@@ -237,19 +234,24 @@
         border-radius: 50%;
         color: #ec5db5;
       }
-      .faq-wrapper-middle .box:nth-of-type(1), .faq-wrapper-middle .box:nth-of-type(3){
-        margin-top: 185px;
-      }
+      /* .faq-wrapper-middle .box:nth-of-type(1),
+                  .faq-wrapper-middle .box:nth-of-type(3) {
+                    margin-top: 125px;
+                  }
 
-      .faq-wrapper-middle .box:nth-of-type(4){
-        margin-top: -100px;
+                  .faq-wrapper-middle .box:nth-of-type(4) {
+                    margin-top: -150px;
+                  } */
+
+      .hero .faq-wrapper-middle {
+        margin-bottom: 85px;
       }
 
       .box {
-    width: 220px;
-    height: 220px;
-    list-style: none;
-}
+        width: 220px;
+        height: 220px;
+        list-style: none;
+      }
       .box .front {
         width: 100%;
         height: 100%;
@@ -357,28 +359,180 @@
         color: #fff;
         font-size: 20px;
       }
-     
-      .hero-wraper{
-        position: absolute;
+
+      .hero-wraper {
         display: flex;
+        padding-left: 160px;
+        align-items: center;
+        height: 40px;
+      }
+      .faq-wrapper-middle-1 {
+        display: flex;
+        gap: 285px;
+        margin-bottom: -335px;
+      }
+      .faq-wrapper-middle-2 {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+      }
+
+      @media (max-width: 1300px) {
+        .box {
+          width: 190px;
+          height: 190px;
+        }
+        .faq-wrapper {
+          gap: 50px;
+        }
+        .top-image {
+          height: 80vh;
+        }
+      }
+      @media (max-width: 1200px) {
+        .hero {
+          margin-bottom: -150px;
+          gap: 70px;
+        }
+        .box {
+          width: 165px;
+          height: 165px;
+        }
+        .faq-wrapper {
+          gap: 25px;
+        }
+        .top-image {
+          height: 75vh;
+          top: 35%;
+        }
+        .box .front .center h1 {
+          font-size: 22px;
+        }
+        .faq-wrapper-middle-1 {
+          gap: 225px;
+          margin-bottom: -270px;
+        }
+        .hero-wraper {
+          padding-left: 90px;
+        }
+        .hero .faq-wrapper-middle {
+          margin-bottom: 220px;
+        }
+      }
+      @media (max-width: 1000px) {
+        .hero {
+          margin-bottom: 30px;
+          height: 58vh;
+          gap: 35px;
+        }
+        .box {
+          width: 130px;
+          height: 130px;
+        }
+        .faq-wrapper {
+          gap: 25px;
+        }
+        .top-image {
+          height: 65vh;
+          top: 45%;
+        }
+        .box .front .center h1 {
+          font-size: 16px;
+        }
+        .faq-wrapper-middle-1 {
+          gap: 115px;
+          margin-bottom: -225px;
+        }
+        .hero-wraper {
+          padding-left: 90px;
+        }
+        .hero .faq-wrapper-middle {
+          margin-bottom: 0px;
+          height: 55vh;
+        }
+      }
+      @media (max-width: 700px) {
+        .hero {
+          margin-bottom: 15px;
+          height: 58vh;
+          gap: 15px;
+        }
+        .box {
+          width: 90px;
+          height: 90px;
+        }
+        .top-image {
+          height: 40vh;
+          top: 50%;
+        }
+        .box .front .center h1 {
+          font-size: 12px;
+        }
+        .faq-wrapper-middle-1 {
+          gap: 60px;
+          margin-bottom: -155px;
+        }
+        .hero .faq-wrapper-middle {
+          height: 45vh;
+        }
+        ul:not(.u-unstyled) {
+          margin-top: 72px;
+        }
+        .hero-wraper {
+          padding-left: 30px;
+          padding-top: 30px;
+        }
+      }
+      @media (max-width: 480px) {
+        .top-image {
+          height: 30vh;
+          filter: brightness(130%);
+        }
+        ul,
+        ol {
+          padding-left: 0px;
+          margin: 0 -8px;
+        }
+        .hero {
+          margin-bottom: 143px;
+          height: 100vh;
+          gap: 15px;
+        }
+        .faq-wrapper-middle-1 {
+          flex-direction: column;
+        }
       }
     </style>
+    <div class="hero-wraper">
+      <img
+        src="images/favicon.png"
+        alt=""
+        style="
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          background-color: #f6c21e;
+          padding: 3px;
+        "
+      />
+      <h1
+        class="faq-hero"
+        style="
+          padding-left: 10px;
+          font-size: 32px;
+          font-weight: 500;
+          color: #fe4f02;
+        "
+      >
+        FAQs
+      </h1>
+    </div>
     <div class="hero">
-      <img src="images/badge logo.png" alt="" class="top-image" />
-      <div class="hero-wraper">
-        <img
-          src="images/favicon.png"
-          alt=""
-          style="
-            width: 58px;
-            height: 56px;
-            border-radius: 50%;
-            background-color: #f6c21e;
-            padding: 3px;
-          "
-        />
-        <h1 class="hero" style="padding-left: 10px">FAQs</h1>
-      </div>
+      <img
+        src="images/customcolor_logo_customcolor_background.png"
+        alt=""
+        class="top-image"
+      />
 
       <ul class="faq-wrapper">
         <li class="box">
@@ -459,107 +613,112 @@
         </li>
       </ul>
       <ul class="faq-wrapper-middle">
-        <li class="box">
-          <div class="front">
-            <div class="center">
-              <h1>
-                Where does <br />
-                tutoring take <br />
-                place?
-              </h1>
+        <div class="faq-wrapper-middle-1">
+          <li class="box">
+            <div class="front">
+              <div class="center">
+                <h1>
+                  Where does <br />
+                  tutoring take <br />
+                  place?
+                </h1>
+              </div>
             </div>
-          </div>
-          <div class="back">
-            <div class="row">
-              <img src="images/logo small.png" alt="" />
-              <h1>Where does tutoring take place?</h1>
+            <div class="back">
+              <div class="row">
+                <img src="images/logo small.png" alt="" />
+                <h1>Where does tutoring take place?</h1>
+              </div>
+              <div class="row">
+                <span
+                  >Tutoring sessions typically take place in a virtual setting.
+                  You will meet with your tutor either through Google Meet or
+                  Zoom. When you log in to your portal and check your calendar,
+                  you will be able to access the session link there.</span
+                >
+              </div>
             </div>
-            <div class="row">
-              <span
-                >Tutoring sessions typically take place in a virtual setting.
-                You will meet with your tutor either through Google Meet or
-                Zoom. When you log in to your portal and check your calendar,
-                you will be able to access the session link there.</span
-              >
+          </li>
+          <li class="box">
+            <div class="front">
+              <div class="center">
+                <h1>
+                  Are you able <br />
+                  tutor in <br />
+                  person?
+                </h1>
+              </div>
             </div>
-          </div>
-        </li>
-        <li class="box">
-          <div class="front">
-            <div class="center">
-              <h1>
-                Are you able <br />
-                tutor in <br />
-                person?
-              </h1>
+            <div class="back">
+              <div class="row">
+                <img src="images/logo small.png" alt="" />
+                <h1>Are you able to tutor in person?</h1>
+              </div>
+              <div class="row">
+                <span
+                  >At this time, in person tutoring is only available in the
+                  Austin area. If you are in austin or surrounding areas, in
+                  person tutoring is limited and slots fill up quickly. All in
+                  person tutoring incurs an additional fee. Please contact us to
+                  see if we can accommodate your in person needs.</span
+                >
+              </div>
             </div>
-          </div>
-          <div class="back">
-            <div class="row">
-              <img src="images/logo small.png" alt="" />
-              <h1>Are you able to tutor in person?</h1>
+          </li>
+        </div>
+
+        <div class="faq-wrapper-middle-2">
+          <li class="box">
+            <div class="front">
+              <div class="center">
+                <h1>
+                  What do I <br />
+                  need for <br />
+                  tutoring?
+                </h1>
+              </div>
             </div>
-            <div class="row">
-              <span
-                >At this time, in person tutoring is only available in the
-                Austin area. If you are in austin or surrounding areas, in
-                person tutoring is limited and slots fill up quickly. All in
-                person tutoring incurs an additional fee. Please contact us to
-                see if we can accommodate your in person needs.</span
-              >
+            <div class="back">
+              <div class="row">
+                <img src="images/logo small.png" alt="" />
+                <h1>What do I need for tutoring?</h1>
+              </div>
+              <div class="row">
+                <span
+                  >Our platform is web based, therefore it works anywhere that
+                  has internet access. This includes on a phone, ipad/tablet,
+                  laptop, etc. Ideally a laptop would work best. You will also
+                  need a strong internet connection.</span
+                >
+              </div>
             </div>
-          </div>
-        </li>
-        <li class="box">
-          <div class="front">
-            <div class="center">
-              <h1>
-                What do I <br />
-                need for <br />
-                tutoring?
-              </h1>
+          </li>
+          <li class="box">
+            <div class="front">
+              <div class="center">
+                <h1>
+                  What do I <br />
+                  need for <br />
+                  tutoring?
+                </h1>
+              </div>
             </div>
-          </div>
-          <div class="back">
-            <div class="row">
-              <img src="images/logo small.png" alt="" />
-              <h1>What do I need for tutoring?</h1>
+            <div class="back">
+              <div class="row">
+                <img src="images/logo small.png" alt="" />
+                <h1>What do I need for tutoring?</h1>
+              </div>
+              <div class="row">
+                <span
+                  >Our platform is web based, therefore it works anywhere that
+                  has internet access. This includes on a phone, ipad/tablet,
+                  laptop, etc. Ideally a laptop would work best. You will also
+                  need a strong internet connection.</span
+                >
+              </div>
             </div>
-            <div class="row">
-              <span
-                >Our platform is web based, therefore it works anywhere that has
-                internet access. This includes on a phone, ipad/tablet, laptop,
-                etc. Ideally a laptop would work best. You will also need a
-                strong internet connection.</span
-              >
-            </div>
-          </div>
-        </li>
-        <li class="box">
-          <div class="front">
-            <div class="center">
-              <h1>
-                What do I <br />
-                need for <br />
-                tutoring?
-              </h1>
-            </div>
-          </div>
-          <div class="back">
-            <div class="row">
-              <img src="images/logo small.png" alt="" />
-              <h1>What do I need for tutoring?</h1>
-            </div>
-            <div class="row">
-              <span
-                >Our platform is web based, therefore it works anywhere that has
-                internet access. This includes on a phone, ipad/tablet, laptop,
-                etc. Ideally a laptop would work best. You will also need a
-                strong internet connection.</span
-              >
-            </div>
-          </div>
-        </li>
+          </li>
+        </div>
       </ul>
       <ul class="faq-wrapper">
         <li class="box">
