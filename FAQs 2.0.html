@@ -257,6 +257,7 @@
       .box:hover .front {
         transform: perspective(1000px) rotateY(180deg);
       }
+     
       .box .back {
         position: absolute;
         top: 10%;
@@ -269,7 +270,34 @@
         z-index: 1;
         box-shadow: 5px 6px 5px 1px rgba(0, 0, 0, 0.3);
         border-radius: 10px;
+        overflow-y: scroll;
+        background-color: #9063cd;
+        
       }
+ 
+/* .box .back::-webkit-scrollbar {
+  width: 10px;
+  height: 80%;
+
+}
+.box .back {
+  scrollbar-width: thin;
+  scrollbar-color: red #9063cd;;
+}
+.box .back::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+.box .back::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: rgba(255,0,0,0.8); 
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+::-webkit-scrollbar-thumb:window-inactive {
+    background: rgba(255,0,0,0.4); 
+} */
       .box:hover .back {
         transform: perspective(1000px) rotateY(0deg);
       }
@@ -708,9 +736,10 @@
             <div class="front">
               <div class="center">
                 <h1>
-                  Where does <br />
-                  tutoring take <br />
-                  place?
+                  Am I able to <br />
+                  check my <br />
+                  child's <br />
+                  progress?
                 </h1>
               </div>
             </div>
@@ -720,14 +749,16 @@
                   src="images/customcolor_logo_transparent_background.png"
                   alt=""
                 />
-                <h1>Where does tutoring take place?</h1>
+                <h1>
+                  Am I able to check my child’s <br />
+                  progress?
+                </h1>
               </div>
               <div class="row">
                 <span
-                  >Tutoring sessions typically take place in a virtual setting.
-                  You will meet with your tutor either through Google Meet or
-                  Zoom. When you log in to your portal and check your calendar,
-                  you will be able to access the session link there.</span
+                  >As a parent, you will have access to the notes left by the
+                  tutor at the end of each session, which details your child's
+                  progress and performance.</span
                 >
               </div>
             </div>
@@ -736,9 +767,9 @@
             <div class="front">
               <div class="center">
                 <h1>
-                  Are you able <br />
-                  tutor in <br />
-                  person?
+                  What is your <br />
+                  cancellation <br />
+                  policy?
                 </h1>
               </div>
             </div>
@@ -748,16 +779,25 @@
                   src="images/customcolor_logo_transparent_background.png"
                   alt=""
                 />
-                <h1>Are you able to tutor in person?</h1>
+                <h1>What is your cancellation policy?</h1>
               </div>
               <div class="row">
                 <span
-                  >At this time, in person tutoring is only available in the
-                  Austin area. If you are in austin or surrounding areas, in
-                  person tutoring is limited and slots fill up quickly. All in
-                  person tutoring incurs an additional fee. Please contact us to
-                  see if we can accommodate your in person needs.</span
-                >
+                  >Cancellation Policy for Students: If you cancel a tutoring
+                  session at least 24 hours before the scheduled time, you are
+                  eligible for a refund or rescheduling of the session. In case
+                  of a cancellation within 24 hours of the session, you will
+                  receive a refund of 50%, credited to your account. However, if
+                  you fail to attend the session without prior notice, there
+                  will be no refund. <br /><br />
+                  Cancellation Policy for Tutors: If a tutor cancels a session
+                  at least 24 hours before the scheduled time, you are eligible
+                  for rescheduling the session. In case of a cancellation within
+                  24 hours of the session, you will receive one hour of free
+                  tutoring. If the tutor fails to show up for the session
+                  without prior notice, you are eligible for two hours of free
+                  tutoring.
+                </span>
               </div>
             </div>
           </li>
@@ -768,9 +808,9 @@
             <div class="front">
               <div class="center">
                 <h1>
-                  What do I <br />
-                  need for <br />
-                  tutoring?
+                  Are payment <br />
+                  plans <br />
+                  available?
                 </h1>
               </div>
             </div>
@@ -780,14 +820,18 @@
                   src="images/customcolor_logo_transparent_background.png"
                   alt=""
                 />
-                <h1>What do I need for tutoring?</h1>
+                <h1>Are payment plans available?</h1>
               </div>
               <div class="row">
                 <span
-                  >Our platform is web based, therefore it works anywhere that
-                  has internet access. This includes on a phone, ipad/tablet,
-                  laptop, etc. Ideally a laptop would work best. You will also
-                  need a strong internet connection.</span
+                  >The payment deadline is the date specified on the invoice,
+                  usually 24 hours before your first tutoring session. If you
+                  require a payment plan, please contact us, and we will assist
+                  you in setting it up. <br /><br />
+                  Please be aware that all payment plans will involve a monthly
+                  fee and require you to have a credit card on file with
+                  auto-pay enabled. Additionally, credit card payments will
+                  include a convenience fee of 4%.</span
                 >
               </div>
             </div>
@@ -796,9 +840,9 @@
             <div class="front">
               <div class="center">
                 <h1>
-                  What do I <br />
-                  need for <br />
-                  tutoring?
+                  Is there a <br />
+                  sibling <br />
+                  discount?
                 </h1>
               </div>
             </div>
@@ -808,14 +852,12 @@
                   src="images/customcolor_logo_transparent_background.png"
                   alt=""
                 />
-                <h1>What do I need for tutoring?</h1>
+                <h1>Is there a sibling discount?</h1>
               </div>
               <div class="row">
                 <span
-                  >Our platform is web based, therefore it works anywhere that
-                  has internet access. This includes on a phone, ipad/tablet,
-                  laptop, etc. Ideally a laptop would work best. You will also
-                  need a strong internet connection.</span
+                  >Yes, a 5% discount will be provided for each sibling enrolled
+                  in our tutoring services.</span
                 >
               </div>
             </div>
@@ -827,9 +869,11 @@
           <div class="front">
             <div class="center">
               <h1>
-                Where does <br />
-                tutoring take <br />
-                place?
+                Can my <br />
+                child receive <br />
+                help with <br />
+                their school <br />
+                work?
               </h1>
             </div>
           </div>
@@ -839,14 +883,18 @@
                 src="images/customcolor_logo_transparent_background.png"
                 alt=""
               />
-              <h1>Where does tutoring take place?</h1>
+              <h1>
+                Can my child receive help on <br />
+                schoolwork?
+              </h1>
             </div>
             <div class="row">
               <span
-                >Tutoring sessions typically take place in a virtual setting.
-                You will meet with your tutor either through Google Meet or
-                Zoom. When you log in to your portal and check your calendar,
-                you will be able to access the session link there.</span
+                >Certainly! You can inform your tutor about the materials you
+                plan to use during your session. You may upload and share the
+                documents by scanning them and sending them to your tutor
+                beforehand. This allows your tutor to be fully prepared for your
+                lesson.</span
               >
             </div>
           </div>
@@ -855,9 +903,10 @@
           <div class="front">
             <div class="center">
               <h1>
-                Are you able <br />
-                tutor in <br />
-                person?
+                Is a diagnostic <br />
+                assessment <br />
+                required before <br />
+                tutoring?
               </h1>
             </div>
           </div>
@@ -867,15 +916,17 @@
                 src="images/customcolor_logo_transparent_background.png"
                 alt=""
               />
-              <h1>Are you able to tutor in person?</h1>
+              <h1>
+                Is a diagnostic assessment required <br />
+                before tutoring?
+              </h1>
             </div>
             <div class="row">
               <span
-                >At this time, in person tutoring is only available in the
-                Austin area. If you are in austin or surrounding areas, in
-                person tutoring is limited and slots fill up quickly. All in
-                person tutoring incurs an additional fee. Please contact us to
-                see if we can accommodate your in person needs.</span
+                >This is not mandatory. Your tutor will initiate contact to
+                discuss your child's current performance and progress. Depending
+                on your objectives, your tutor may conduct an informal
+                assessment during the initial sessions.</span
               >
             </div>
           </div>
@@ -904,10 +955,11 @@
             </div>
             <div class="row">
               <span
-                >Our platform is web based, therefore it works anywhere that has
-                internet access. This includes on a phone, ipad/tablet, laptop,
-                etc. Ideally a laptop would work best. You will also need a
-                strong internet connection.</span
+                >Yes, we do offer 30-minute tutoring sessions to accommodate
+                younger students, those who may have shorter attention spans, or
+                difficulty sitting still for extended periods. However, it's
+                important to note that more complex skills or topics may require
+                additional time to fully cover and master.</span
               >
             </div>
           </div>
