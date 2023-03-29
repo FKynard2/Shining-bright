@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html style="font-size: 16px">
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap"
+      rel="stylesheet"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="utf-8" />
     <meta name="keywords" content="Contact Us" />
@@ -195,15 +201,19 @@
     <style>
       .hero {
         position: absolute;
-        width: 65%;
+        width: 90%;
+        height: 95vh;
         left: 50%;
         transform: translateX(-50%);
       }
+      .button-split {
+        display: flex;
+        background-color: transparent;
+        flex-direction: column;
+      }
 
       footer {
-        position: absolute;
         width: 100%;
-        bottom: 0;
       }
       .contact-align {
         align-items: flex-end;
@@ -223,10 +233,22 @@
       .hero-wraper {
         position: relative;
       }
+      .u-section-1 {
+        margin-bottom: 100px;
+      }
       .u-section-1 .u-text-1 {
         font-weight: lighter;
         margin: 0;
         font-size: 30px;
+      }
+      .u-section-1 .u-form-1 {
+        width: 50%;
+        flex-basis: 45%;
+      }
+      .extra-flex {
+        flex-basis: 25%;
+        align-self: center;
+        margin-top: 12%;
       }
       .header-center {
         text-align: -webkit-center;
@@ -234,6 +256,9 @@
       .u-form-vertical.u-form-spacing-20 .u-form-group {
         margin-bottom: 0;
         padding-left: 0;
+      }
+      .u-btn-rectangle {
+        border-radius: 20px !important;
       }
 
       .u-input,
@@ -244,21 +269,86 @@
         font-size: 20px;
         padding: 2px;
       }
+      .stamp {
+        transform: rotate(12deg);
+        color: #555;
+        font-size: 3rem;
+        font-weight: 700;
+        border: 0.25rem solid #555;
+        display: inline-block;
+        padding: 0.25rem 1rem;
+        text-transform: uppercase;
+        border-radius: 1rem;
+        font-family: 'Black Ops One', cursive;
+        -webkit-mask-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/8399/grunge.png');
+        -webkit-mask-size: 944px 604px;
+        mix-blend-mode: multiply;
+        border-radius: 50px;
+      }
+      .stamp-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .call-us {
+        color: #fe5610;
+        transform: rotate(-14deg);
+        font-size: 36px;
+        margin-left: 50px;
+      }
+      .is-approved {
+        color: #fe5610;
+        border: 0.5rem solid #fe5610;
+        -webkit-mask-position: 13rem 6rem;
+        transform: rotate(-14deg);
+        border-radius: 30px;
+        max-height: 100px;
+      }
+      .top-section {
+        display: flex;
+        justify-content: space-between;
+        margin: 100px;
+      }
+      .u-form-vertical.u-form-spacing-20 .u-form-group {
+        margin-bottom: 0;
+        padding-left: 0;
+        display: flex;
+        justify-content: space-around;
+      }
     </style>
     <div class="hero-wraper">
-      <img src="images/logo side badge.png" alt="" class="hero" />
+      <img
+        src="images/base_logo_transparent_background.png"
+        alt=""
+        class="hero"
+      />
+    </div>
+    <div class="top-section">
+      <div class="stamp-wrapper">
+        <span class="stamp is-approved">Call Us today</span>
+        <span class="call-us">(512) 607-5973</span>
+      </div>
+      <p class="address-box">
+        <br />
+        Send Mail to:
+        <br />
+        5900 Balcones Drive
+        <br />
+        Suite 6211
+        <br />
+        Austin, TX 78731
+      </p>
     </div>
     <section
       class="u-align-center u-clearfix u-grey-5 u-section-1 button-split"
       id="sec-6701"
     >
-      <div class="u-btn-req-center"></div>
       <div class="u-clearfix u-valign-middle u-sheet-1 contact-align">
-        <div>
+        <div class="extra-flex">
           <a
             href="Sign up.html"
             class="u-border-1 u-border-black u-btn u-button-style u-hover-black u-none u-text-hover-white u-btn-1 u-btn-rectangle u-border-2"
-            
+            style="padding: 10px 25%"
             >Sign Up Now!</a
           >
         </div>
@@ -343,17 +433,6 @@
           </form>
         </div>
       </div>
-      <p class="address-box">
-        <!-- <span class="Shining-bright">Shining Bright Tutors</span> -->
-        <br />
-        Send Mail to: 5900
-        <br />
-        Balcones Drive Suite 6211
-        <br />
-        Austin, TX 78731
-
-        <!-- <span class="call-us">Call Us at (512) 607-5973</span> -->
-      </p>
     </section>
 
     <footer
