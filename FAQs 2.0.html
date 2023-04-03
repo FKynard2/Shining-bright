@@ -57,6 +57,13 @@
     <meta property="og:title" content="FAQs" />
     <meta property="og:type" content="website" />
   </head>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  </style>
   <body class="u-body u-xl-mode">
     <header class="u-clearfix u-header u-header" id="sec-9623">
       <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
@@ -205,7 +212,6 @@
         position: relative;
         display: flex;
         justify-content: center;
-        gap: 140px;
       }
       .top-image {
         position: absolute;
@@ -217,16 +223,21 @@
         z-index: -1;
         filter: brightness(187%);
       }
+      .hero .faq-wrapper {
+        padding-left: 0;
+        margin-bottom: 6rem;
+      }
 
       .faq-wrapper {
         display: flex;
         flex-direction: column;
-        gap: 50px;
+        justify-content: space-evenly;
+        width: 75%;
       }
       .faq-wrapper-middle {
         display: flex;
         justify-content: center;
-        width: 45%;
+        width: 100%;
         flex-direction: column;
         align-items: center;
       }
@@ -246,9 +257,10 @@
       }
 
       .box {
-        width: 220px;
-        height: 220px;
+        width: clamp(100px, 55%, 220px);
+        height: clamp(100px, 25%, 220px);
         list-style: none;
+        align-self: center;
       }
       .box .front {
         width: 100%;
@@ -259,6 +271,7 @@
         backface-visibility: hidden;
         transform: perspective(1000px) rotateY(0deg);
         transition: 1s;
+        min-height: 5.5rem;
       }
       .box:hover .front {
         transform: perspective(1000px) rotateY(180deg);
@@ -276,31 +289,14 @@
         z-index: 1;
         box-shadow: 5px 6px 5px 1px rgba(0, 0, 0, 0.3);
         border-radius: 10px;
-        overflow-y: scroll;
+
         background-color: #9063cd;
       }
 
       .box .back::-webkit-scrollbar {
         display: none;
       }
-      /* .box .back {
-  scrollbar-width: thin;
-  scrollbar-color: red #9063cd;;
-}
-.box .back::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
-    -webkit-border-radius: 10px;
-    border-radius: 10px;
-}
-.box .back::-webkit-scrollbar-thumb {
-  -webkit-border-radius: 10px;
-    border-radius: 10px;
-    background: rgba(255,0,0,0.8); 
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
-}
-::-webkit-scrollbar-thumb:window-inactive {
-    background: rgba(255,0,0,0.4); 
-} */
+
       .box:hover .back {
         transform: perspective(1000px) rotateY(0deg);
       }
@@ -328,7 +324,6 @@
       .box .back .row {
         position: relative;
         width: 100%;
-        height: 50%;
       }
       .box .back .row:nth-of-type(1) {
         background: #f6d2e8;
@@ -353,9 +348,9 @@
         margin-right: 28px;
       }
       .box .back .row h1 {
-        font-size: 50px;
+        font-size: 3.4vw;
         color: white;
-        white-space: nowrap;
+
         display: inline-block;
         font-family: 'Edu NSW ACT Foundation', cursive;
         text-transform: uppercase;
@@ -385,43 +380,44 @@
 
       .hero-wraper {
         display: flex;
-        padding-left: 160px;
+        margin-left: 8rem;
         align-items: center;
         height: 40px;
       }
       .faq-wrapper-middle-1 {
         display: flex;
-        gap: 285px;
-        margin-bottom: -335px;
+        justify-content: space-between;
+        margin-bottom: -40rem;
+        width: 100%;
+        height: 100%;
       }
       .faq-wrapper-middle-2 {
         display: flex;
         flex-direction: column;
-        gap: 30px;
+        gap: 5rem;
+        width: 100%;
+        height: 100%;
+      }
+
+      .faq-wrapper-middle-1 .box, .faq-wrapper-middle-2 .box {
+        width: clamp(100px, 100%, 220px);
+        height: clamp(100px, 100%, 220px);
+        list-style: none;
+        align-self: center;
       }
 
       @media (max-width: 1300px) {
-        .hero {
-          gap: 100px;
-        }
-        .box {
-          width: 190px;
-          height: 190px;
-        }
-        .faq-wrapper {
-          gap: 50px;
-        }
+      
         .top-image {
-          height: 80vh;
+          height: 69vh;
         }
         /* This is for the backcard */
         .box .back {
           top: 0;
           width: 65%;
-          min-height: 63%;
+          min-height: 50%;
         }
         .box .back .row h1 {
-          font-size: 36px;
           margin: 0;
         }
         .box .back .row img {
@@ -429,38 +425,20 @@
         }
       }
       @media (max-width: 1200px) {
-        .hero {
-          margin-bottom: -150px;
-          gap: 70px;
-        }
-        .box {
-          width: 165px;
-          height: 165px;
-        }
-        .faq-wrapper {
-          gap: 25px;
-        }
+      
+      
         .top-image {
-          height: 75vh;
+          height: 60vh;
           top: 35%;
         }
         .box .front .center h1 {
           font-size: 22px;
         }
-        .faq-wrapper-middle-1 {
-          gap: 225px;
-          margin-bottom: -270px;
-        }
-        .hero-wraper {
-          padding-left: 90px;
-        }
-        .hero .faq-wrapper-middle {
-          margin-bottom: 220px;
-        }
+        
+        
+      
         /* This is for the backcard */
-        .box .back .row h1 {
-          font-size: 30px;
-        }
+
         .box .back .row span {
           padding: 0;
         }
@@ -469,44 +447,22 @@
         }
       }
       @media (max-width: 1000px) {
-        .hero {
-          margin-bottom: 30px;
-          height: 58vh;
-          gap: 35px;
-        }
-        .box {
-          width: 130px;
-          height: 130px;
-        }
-        .faq-wrapper {
-          gap: 25px;
-        }
+       
+      
         .top-image {
-          height: 65vh;
+          height: 51vh;
           top: 45%;
         }
-        .box .front .center h1 {
-          font-size: 16px;
-        }
-        .faq-wrapper-middle-1 {
-          gap: 115px;
-          margin-bottom: -225px;
-        }
-        .hero-wraper {
-          padding-left: 90px;
-        }
-        .hero .faq-wrapper-middle {
-          margin-bottom: 0px;
-          height: 55vh;
-        }
+      
+       
+       
+       
         /* This is for the backcard */
         .box .back .row img {
           width: 210px;
           height: 90px;
         }
-        .box .back .row h1 {
-          font-size: 27px;
-        }
+
         .box .back .row:nth-of-type(1) {
           border-bottom: 4px solid #fe4f02;
           text-align: center;
@@ -528,43 +484,20 @@
         }
       }
       @media (max-width: 700px) {
-        .hero {
-          margin-bottom: 15px;
-          height: 58vh;
-          gap: 15px;
-        }
-        .box {
-          width: 90px;
-          height: 90px;
-        }
+     
+       
         .top-image {
           height: 40vh;
           top: 50%;
         }
-        .box .front .center h1 {
-          font-size: 12px;
-        }
-        .faq-wrapper-middle-1 {
-          gap: 60px;
-          margin-bottom: -155px;
-        }
-        .hero .faq-wrapper-middle {
-          height: 45vh;
-        }
-        ul:not(.u-unstyled) {
-          margin-top: 72px;
-        }
-        .hero-wraper {
-          padding-left: 30px;
-          padding-top: 30px;
-        }
+      
+      
+      
+       
         /* This is for the backcard */
         .box .back .row img {
           width: 215px;
           height: 95px;
-        }
-        .box .back .row h1 {
-          font-size: 15px;
         }
         .box .back .row span {
           font-size: 12px;
@@ -578,39 +511,19 @@
           height: 30vh;
           filter: brightness(130%);
         }
-        ul,
-        ol {
-          padding-left: 0px;
-          margin: 0 -8px;
-        }
-        .hero {
-          margin-bottom: 143px;
-          height: 50vh;
-          gap: 15px;
-        }
-        .faq-wrapper-middle-1 {
-          flex-direction: column;
-          gap: 10px;
-          margin-bottom: 0px;
-        }
-        .faq-wrapper-middle-2 {
-          gap: 10px;
-        }
-        .hero .faq-wrapper-middle {
-          height: 37vh;
-          gap: 35px;
-        }
+      
+   
 
         /* This for the back card */
         .box .back {
           top: 2%;
           width: 65%;
-          height: 100%;
           transition: 1s;
           z-index: 3;
+          min-height: 90%;
         }
         .box .back .row h1 {
-          font-size: 12px;
+          font-size: 1.6rem;
           display: revert;
           padding: 0px;
           margin-top: 30px;
@@ -918,10 +831,7 @@
                 src="images/customcolor_logo_transparent_background.png"
                 alt=""
               />
-              <h1>
-                Can my child receive help on <br />
-                schoolwork?
-              </h1>
+              <h1>Can my child receive help on schoolwork?</h1>
             </div>
             <div class="row">
               <span
