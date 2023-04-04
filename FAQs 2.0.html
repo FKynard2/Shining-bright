@@ -241,6 +241,20 @@
         flex-direction: column;
         align-items: center;
       }
+      .faq-wrapper-middle-1 {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: -37rem;
+        width: 100%;
+        height: 100%;
+      }
+      .faq-wrapper-middle-2 {
+        display: flex;
+        flex-direction: column;
+        gap: 5rem;
+        width: 100%;
+        height: 100%;
+      }
       .faq-bubble {
         list-style: none;
         border: 2px solid black;
@@ -261,7 +275,6 @@
         align-self: center;
       }
       .box .front {
-        
         border-radius: 50%;
         background: #fff7e1;
         border: 4px solid #e295c4;
@@ -381,27 +394,25 @@
         align-items: center;
         height: 40px;
       }
-      .faq-wrapper-middle-1 {
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: -37rem;
-        width: 100%;
-        height: 100%;
-      }
-      .faq-wrapper-middle-2 {
-        display: flex;
-        flex-direction: column;
-        gap: 5rem;
-        width: 100%;
-        height: 100%;
-      }
 
-      
+      @media (max-width: 1500px) {
+        .box .front {
+          padding: 5rem;
+        }
+        .box .front .center h1 {
+          font-size: 1.3rem;
+        }
+        .faq-wrapper-middle-1 {
+          margin-bottom: -30rem;
+        }
+        .faq-wrapper-middle-1 .box .back .row span {
+          font-size: 15px;
+        }
+      }
 
       @media (max-width: 1300px) {
-      
         .top-image {
-          height: 69vh;
+          height: 100vh;
         }
         /* This is for the backcard */
         .box .back {
@@ -417,18 +428,16 @@
         }
       }
       @media (max-width: 1200px) {
-      
-      
         .top-image {
-          height: 60vh;
-          top: 35%;
+          top: 45%;
+        }
+        .hero .faq-wrapper {
+          margin-bottom: 2rem;
         }
         .box .front .center h1 {
           font-size: 22px;
         }
-        
-        
-      
+
         /* This is for the backcard */
 
         .box .back .row span {
@@ -437,19 +446,48 @@
         .box .back .row:nth-of-type(2) {
           padding: 10px 20px;
         }
+        .box .back {
+          min-height: 80%;
+        }
+      }
+      @media (max-width: 1050px) {
+        .box .front {
+          padding: 4.7rem;
+        }
+        .faq-wrapper-middle-1 {
+          margin-bottom: -27.5rem;
+        }
       }
       @media (max-width: 1000px) {
-       
-      
         .top-image {
-          height: 51vh;
+          height: 75vh;
           top: 45%;
         }
-      
-       
-       
-       
+        .faq-wrapper {
+          width: 50%;
+        }
+
+        .hero .faq-wrapper {
+          margin-bottom: 10rem;
+        }
+        .faq-wrapper-middle-1 {
+          margin-bottom: -30.5rem;
+        }
+        .box .back {
+          min-height: 60%;
+        }
+        .box .back .row h1 {
+          font-size: 3.7vw;
+        }
+        .box .front .center h1 {
+          font-size: 1.2rem;
+        }
+
         /* This is for the backcard */
+        .box .back {
+          min-height: 40%;
+          top: 25%;
+        }
         .box .back .row img {
           width: 210px;
           height: 90px;
@@ -466,26 +504,32 @@
         .box .back .row:nth-of-type(2) {
           padding: 10px 10px;
         }
-        @media (orientation: landscape) {
-          .hero {
-            height: 118vh;
-          }
-          .hero .faq-wrapper-middle {
-            height: 118vh;
-          }
-        }
       }
-      @media (max-width: 700px) {
-     
-       
+      @media (max-width: 767px) {
         .top-image {
-          height: 40vh;
+          height: 65vh;
           top: 50%;
         }
-      
-      
-      
-       
+        .box .front {
+          padding: 3.4rem;
+        }
+        .box .front .center h1 {
+          font-size: 0.9rem;
+        }
+        .faq-wrapper-middle-1 {
+          margin-bottom: 0;
+          flex-direction: column;
+          justify-content: center;
+        }
+        .faq-wrapper-middle-1,
+        .faq-wrapper-middle-2 {
+          gap: 3rem;
+        }
+        .hero .faq-wrapper-middle {
+          gap: 2rem;
+          width: 50%;
+        }
+
         /* This is for the backcard */
         .box .back .row img {
           width: 215px;
@@ -500,19 +544,17 @@
       }
       @media (max-width: 500px) {
         .top-image {
-          height: 30vh;
-          filter: brightness(130%);
+          height: 50vh;
+          top: 45%;
         }
-      
-   
 
         /* This for the back card */
         .box .back {
-          top: 2%;
+          top: 10%;
           width: 65%;
           transition: 1s;
           z-index: 3;
-          min-height: 90%;
+          min-height: 50%;
         }
         .box .back .row h1 {
           font-size: 1.6rem;
@@ -527,29 +569,17 @@
         .box .back .row:nth-of-type(2) {
           padding: 10px 10px;
         }
-
-        /* .box .back::-webkit-scrollbar {
-          width: 10px;
-          height: 80%;
-        } */
-        /* .box .back {
-          scrollbar-width: thin;
-          scrollbar-color: red #9063cd;
+        .faq-wrapper-middle-1 .box .back .row span {
+          font-size: 12px;
         }
-        .box .back::-webkit-scrollbar-track {
-          -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-          -webkit-border-radius: 10px;
-          border-radius: 10px;
+        @media (orientation: landscape) {
+          .hero {
+            height: 104vh;
+          }
+          .hero .faq-wrapper-middle {
+            height: 118vh;
+          }
         }
-        .box .back::-webkit-scrollbar-thumb {
-          -webkit-border-radius: 10px;
-          border-radius: 10px;
-          background: rgba(255, 0, 0, 0.8);
-          -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
-        }
-        ::-webkit-scrollbar-thumb:window-inactive {
-          background: rgba(255, 0, 0, 0.4);
-        } */
       }
     </style>
     <div class="hero-wraper">
