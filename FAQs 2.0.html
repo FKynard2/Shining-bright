@@ -257,21 +257,18 @@
       }
 
       .box {
-        width: clamp(100px, 55%, 220px);
-        height: clamp(100px, 25%, 220px);
         list-style: none;
         align-self: center;
       }
       .box .front {
-        width: 100%;
-        height: 100%;
+        
         border-radius: 50%;
         background: #fff7e1;
         border: 4px solid #e295c4;
         backface-visibility: hidden;
         transform: perspective(1000px) rotateY(0deg);
         transition: 1s;
-        min-height: 5.5rem;
+        padding: 6rem;
       }
       .box:hover .front {
         transform: perspective(1000px) rotateY(180deg);
@@ -387,7 +384,7 @@
       .faq-wrapper-middle-1 {
         display: flex;
         justify-content: space-between;
-        margin-bottom: -40rem;
+        margin-bottom: -37rem;
         width: 100%;
         height: 100%;
       }
@@ -399,12 +396,7 @@
         height: 100%;
       }
 
-      .faq-wrapper-middle-1 .box, .faq-wrapper-middle-2 .box {
-        width: clamp(100px, 100%, 220px);
-        height: clamp(100px, 100%, 220px);
-        list-style: none;
-        align-self: center;
-      }
+      
 
       @media (max-width: 1300px) {
       
