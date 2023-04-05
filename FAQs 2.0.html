@@ -242,18 +242,12 @@
         align-items: center;
       }
       .faq-wrapper-middle-1 {
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: -37rem;
-        width: 100%;
-        height: 100%;
       }
       .faq-wrapper-middle-2 {
         display: flex;
-        flex-direction: column;
-        gap: 5rem;
         width: 100%;
-        height: 100%;
+        justify-content: space-between;
+        height: 10%;
       }
       .faq-bubble {
         list-style: none;
@@ -267,7 +261,7 @@
       }
 
       .hero .faq-wrapper-middle {
-        margin-bottom: 85px;
+        margin-bottom: 15%;
       }
 
       .box {
@@ -402,9 +396,7 @@
         .box .front .center h1 {
           font-size: 1.3rem;
         }
-        .faq-wrapper-middle-1 {
-          margin-bottom: -30rem;
-        }
+
         .faq-wrapper-middle-1 .box .back .row span {
           font-size: 15px;
         }
@@ -454,10 +446,6 @@
         .box .front {
           padding: 4.7rem;
         }
-        .faq-wrapper-middle-1 {
-          margin-bottom: -27.5rem;
-        }
-      
       }
       @media (max-width: 1000px) {
         .top-image {
@@ -471,9 +459,7 @@
         .hero .faq-wrapper {
           margin-bottom: 10rem;
         }
-        .faq-wrapper-middle-1 {
-          margin-bottom: -30.5rem;
-        }
+
         .box .back {
           min-height: 60%;
         }
@@ -505,10 +491,8 @@
         .box .back .row:nth-of-type(2) {
           padding: 10px 10px;
         }
-       
-      
       }
-     
+
       @media (max-width: 767px) {
         .top-image {
           height: 65vh;
@@ -525,13 +509,17 @@
           flex-direction: column;
           justify-content: center;
         }
-        .faq-wrapper-middle-1,
         .faq-wrapper-middle-2 {
-          gap: 3rem;
+          height: 50%;
+          flex-direction: column;
+          justify-content: space-around;
         }
         .hero .faq-wrapper-middle {
           gap: 2rem;
           width: 50%;
+        }
+        .hero .faq-wrapper {
+          margin-bottom: 7rem;
         }
 
         /* This is for the backcard */
@@ -576,16 +564,15 @@
         .faq-wrapper-middle-1 .box .back .row span {
           font-size: 12px;
         }
-       
       }
-      @media (max-width: 844px) and (orientation: landscape) {
-          .hero {
-            height: 200vh;
-          }
-          .hero .faq-wrapper-middle {
-            height: 165vh;
-          }
+      @media (max-width: 896px) and (max-height: 414px) {
+        .hero {
+          height: 200vh;
         }
+        .hero .faq-wrapper-middle {
+          height: 165vh;
+        }
+      }
     </style>
     <div class="hero-wraper">
       <img
@@ -738,6 +725,9 @@
               </div>
             </div>
           </li>
+    
+        </div>
+        <div class="faq-wrapper-middle-2">
           <li class="box">
             <div class="front">
               <div class="center">
@@ -776,9 +766,6 @@
               </div>
             </div>
           </li>
-        </div>
-
-        <div class="faq-wrapper-middle-2">
           <li class="box">
             <div class="front">
               <div class="center">
@@ -811,6 +798,9 @@
               </div>
             </div>
           </li>
+        </div>
+        <div class="faq-wrapper-middle-3">
+  
           <li class="box">
             <div class="front">
               <div class="center">
@@ -939,12 +929,7 @@
       </ul>
     </div>
 
-    <!-- <div class="bottom-ques">
-      <p class="bold-weight">
-        If you have any additional questions please don't hesitate to contact
-        us.
-      </p>
-    </div> -->
+
 
     <footer
       class="u-align-center u-clearfix u-footer u-grey-80 u-footer"
