@@ -11,6 +11,10 @@
     <link rel="stylesheet" href="Home.css" media="screen" />
     <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon" />
     <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
       class="u-script"
       type="text/javascript"
       src="jquery.js"
@@ -37,7 +41,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-
+    <link rel="stylesheet" href="home2.css" />
     <script type="application/ld+json">
       {
         "@context": "http://schema.org",
@@ -50,285 +54,208 @@
     <meta property="og:title" content="Home" />
     <meta property="og:type" content="website" />
   </head>
-  <body class="u-body u-xl-mode">
-    <header class="u-clearfix u-header u-header" id="sec-9623">
-      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
-        <a
-          href="BackendLogin.html"
-          class="u-image u-logo u-image-1"
-          data-image-width="256"
-          data-image-height="191"
-        >
-          <img src="images/logosmall.png" class="u-logo-image u-logo-image-1" />
-        </a>
-        <nav class="u-menu u-menu-dropdown u-offcanvas u-menu-1">
-          <div
-            class="menu-collapse"
-            style="font-size: 1rem; letter-spacing: 0px"
+  <body class="u-body u-xl-mode home2">
+    <style>
+      .hero {
+        position: relative;
+        overflow: hidden;
+        min-height: 100vh;
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+      .video-bg {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        z-index: -1;
+        transform: translate(-50%, -50%);
+      }
+      .sun {
+        padding: 45px 30px !important;
+        border-radius: 50%;
+        width: 110px;
+        text-align: center;
+      }
+    </style>
+    <div class="hero">
+      <video class="video-bg" autoplay muted loop>
+        <source
+          src="https://video-public.canva.com/VAEXazshK64/v/3229262fa4.mp4"
+        />
+      </video>
+
+      <header class="u-clearfix u-header u-header" id="sec-9623">
+        <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+          <a
+            href="frontend.html"
+            class="u-image u-logo u-image-1"
+            data-image-width="256"
+            data-image-height="191"
           >
-            <a
-              class="u-button-style u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-top-bottom-menu-spacing u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
-              href="#"
-            >
-              <svg class="u-svg-link" viewBox="0 0 24 24">
-                <use
-                  xmlns:xlink="http://www.w3.org/1999/xlink"
-                  xlink:href="#menu-hamburger"
-                ></use>
-              </svg>
-              <svg
-                class="u-svg-content"
-                version="1.1"
-                id="menu-hamburger"
-                viewBox="0 0 16 16"
-                x="0px"
-                y="0px"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <g>
-                  <rect y="1" width="16" height="2"></rect>
-                  <rect y="7" width="16" height="2"></rect>
-                  <rect y="13" width="16" height="2"></rect>
-                </g>
-              </svg>
-            </a>
-          </div>
-          <div class="u-custom-menu u-nav-container">
-            <ul class="u-nav u-unstyled u-nav-1">
-              <li class="u-nav-item">
-                <a
-                  class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
-                  href="/.html"
-                  style="padding: 10px 20px"
-                  >Home</a
-                >
-              </li>
-              <li class="u-nav-item">
-                <a
-                  class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
-                  href="About.html"
-                  style="padding: 10px 20px"
-                  >About</a
-                >
-              </li>
-              <li class="u-nav-item">
-                <a
-                  class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
-                  href="Contact.html"
-                  style="padding: 10px 20px"
-                  >Contact</a
-                >
-              </li>
-              <li class="u-nav-item">
-                <a
-                  class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
-                  href="Services.html"
-                  style="padding: 10px 20px"
-                  >Services</a
-                >
-              </li>
-              <li class="u-nav-item">
-                <a
-                  class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
-                  href="Rates.html"
-                  style="padding: 10px 20px"
-                  >Sign in</a
-                >
-              </li>
-              <li class="u-nav-item">
-                <a
-                  class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
-                  href="FAQs.html"
-                  style="padding: 10px 20px"
-                  >FAQ's</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div class="u-custom-menu u-nav-container-collapse">
+          </a>
+          <nav class="u-menu u-menu-dropdown u-offcanvas u-menu-1">
             <div
-              class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav"
+              class="menu-collapse"
+              style="font-size: 1rem; letter-spacing: 0px"
             >
-              <div class="u-inner-container-layout u-sidenav-overflow">
-                <div class="u-menu-close"></div>
-                <ul
-                  class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"
+              <a
+                class="u-button-style u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-top-bottom-menu-spacing u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
+                href="#"
+              >
+                <svg class="u-svg-link" viewBox="0 0 24 24">
+                  <use
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="#menu-hamburger"
+                  ></use>
+                </svg>
+                <svg
+                  class="u-svg-content"
+                  version="1.1"
+                  id="menu-hamburger"
+                  viewBox="0 0 16 16"
+                  x="0px"
+                  y="0px"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xmlns="http://www.w3.org/2000/svg"
                 >
-                  <li class="u-nav-item">
-                    <a class="u-button-style u-nav-link" href="/">Home</a>
-                  </li>
-                  <li class="u-nav-item">
-                    <a class="u-button-style u-nav-link" href="About.html"
-                      >About</a
-                    >
-                  </li>
-                  <li class="u-nav-item">
-                    <a class="u-button-style u-nav-link" href="Contact.html"
-                      >Contact</a
-                    >
-                  </li>
-                  <li class="u-nav-item">
-                    <a class="u-button-style u-nav-link" href="Services.html"
-                      >Services</a
-                    >
-                  </li>
-                  <li class="u-nav-item">
-                    <a class="u-button-style u-nav-link" href="Rates.html"
-                      >Sign in</a
-                    >
-                  </li>
-                  <li class="u-nav-item">
-                    <a class="u-button-style u-nav-link" href="FAQs.html"
-                      >FAQ's</a
-                    >
-                  </li>
-                </ul>
-              </div>
+                  <g>
+                    <rect y="1" width="16" height="2"></rect>
+                    <rect y="7" width="16" height="2"></rect>
+                    <rect y="13" width="16" height="2"></rect>
+                  </g>
+                </svg>
+              </a>
             </div>
-            <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
-          </div>
-        </nav>
-      </div>
-    </header>
-    <section class="u-align-center u-clearfix u-section-1" id="carousel_9d2b">
-      <div
-        class="u-clearfix u-sheet u-valign-middle-lg u-valign-middle-sm u-valign-middle-xs u-sheet-1"
-      >
-        <h1 class="u-custom-font u-font-playfair-display u-text u-text-1">
-          Learning for your children from the comfort of your own home!
-        </h1>
-
-        <div
-          class="u-expanded-width u-palette-4-base u-shape u-shape-rectangle u-shape-1"
-        ></div>
-
-        <div class="u-clearfix u-gutter-0 u-layout-wrap u-layout-wrap-1">
-          <div class="u-gutter-0 u-layout">
-            <div class="u-layout-col">
-              <div class="u-size-30">
-                <div class="u-layout-row">
-                  <div
-                    class="u-container-style u-image u-layout-cell u-size-60 u-image-1"
-                    data-image-width="1200"
-                    data-image-height="800"
-                  ></div>
+            <div class="u-custom-menu u-nav-container">
+              <ul class="u-nav u-unstyled u-nav-1">
+                <li class="u-nav-item">
+                  <a
+                    class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base sun"
+                    href="/.html"
+                  >
+                    <!-- <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span> -->
+                    Home</a
+                  >
+                </li>
+                <li class="u-nav-item">
+                  <a
+                    class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base sun"
+                    href="About.html"
+                  >
+                    About</a
+                  >
+                </li>
+                <li class="u-nav-item">
+                  <a
+                    class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base sun"
+                    href="Contact.html"
+                  >
+                    Contact</a
+                  >
+                </li>
+                <li class="u-nav-item">
+                  <a
+                    class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base sun"
+                    href="Services.html"
+                  >
+                    Services</a
+                  >
+                </li>
+                <li class="u-nav-item">
+                  <a
+                    class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base sun"
+                    href="Rates.html"
+                  >
+                    Sign in</a
+                  >
+                </li>
+                <li class="u-nav-item">
+                  <a
+                    class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base sun"
+                    href="FAQs.html"
+                  >
+                    <!-- <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span> -->
+                    FAQ's</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="u-custom-menu u-nav-container-collapse">
+              <div
+                class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav"
+              >
+                <div class="u-inner-container-layout u-sidenav-overflow">
+                  <div class="u-menu-close"></div>
+                  <ul
+                    class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"
+                  >
+                    <li class="u-nav-item">
+                      <a class="u-button-style u-nav-link" href="/">Home</a>
+                    </li>
+                    <li class="u-nav-item">
+                      <a class="u-button-style u-nav-link" href="About.html"
+                        >About</a
+                      >
+                    </li>
+                    <li class="u-nav-item">
+                      <a class="u-button-style u-nav-link" href="Contact.html"
+                        >Contact</a
+                      >
+                    </li>
+                    <li class="u-nav-item">
+                      <a class="u-button-style u-nav-link" href="Services.html"
+                        >Services</a
+                      >
+                    </li>
+                    <li class="u-nav-item">
+                      <a class="u-button-style u-nav-link" href="Rates.html"
+                        >Sign in</a
+                      >
+                    </li>
+                    <li class="u-nav-item">
+                      <a class="u-button-style u-nav-link" href="FAQs.html"
+                        >FAQ's</a
+                      >
+                    </li>
+                  </ul>
                 </div>
               </div>
+              <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
             </div>
-          </div>
+          </nav>
         </div>
-        <p class="u-text u-text-2">
-          Shining Bright Tutors LLC serves students online in grades K-12. We
-          specialize in 1-on-1 tutoring covering core subjects and test prep.
-          All services are tailored to your student so that they may meet their
-          goals.
-        </p>
-      </div>
-      <div>
-        <a
-          href="Services.html"
-          class="u-hover-white u-none u-text-hover-white u-btn-req"
-          >Services</a
-        >
-        <img src="images/laptop final.png" alt="" style="width: 75%" />
-      </div>
+      </header>
 
-      <div class="connect-margin">Connect with Us on Social Media</div>
-      <a
-        href="https://www.facebook.com/shiningbrighttutors"
-        class="fa fa-facebook"
-        target="_blank"
-      ></a>
-      <a
-        href="https://twitter.com/S_Bright_Tutors"
-        class="fa fa-twitter"
-        target="_blank"
-      ></a>
-      <a
-        href="https://www.linkedin.com/company/shining-bright-tutors-llc"
-        class="fa fa-linkedin"
-        target="_blank"
-      ></a>
-      <a
-        href="https://www.instagram.com/shining_bright_tutors/"
-        class="fa fa-instagram"
-        target="_blank"
-      ></a>
-    </section>
-    <div class="contact-center">
-      <a
-        href="Contact.html"
-        class="u-border-2 u-border-black u-btn u-button-style u-hover-black u-none u-text-active-palette-3-base u-text-black u-text-hover-white u-btn-2"
-        >Contact Us</a
-      >
-    </div>
+      <section class="home2-section">
+        <header>
+          <h1 class="header">
+            THE FUTURE OF <br />
+            <span>ELEARING</span>
+          </h1>
+        </header>
+        <a href="login.html" style="display: contents"
+          ><img src="images/favicon.png" class="landinglogo"
+        /></a>
+        <h2 class="homeh2">
+          <hr />
+          SHINING BRIGHT TUTORS: CREATING BRIGHT FUTURES
+          <hr />
+        </h2>
 
-    <section>
-      <div class="blog-box">
-        <div class="blog-card first-spot">
-          <img src="images/blog img 7-5.png" alt="" class="blog-image u-text" />
-          <p class="p-blog">
-            July 6, 2022 - Word of the Week Wednesday: Increase your vocabulary
-            by learning new words each week! Words are provided on any level
-            from elementary and up! This week's word is ANALYZE. Want to see a
-            specific word, reach out and it may be next! Sign up for tutoring,
-            and your kids can benefit from strategies like these.
-          </p>
-          <!-- <a href="#" class="blog-btn">Read More</a> -->
+        <div class="home2-sec4">
+          <a href="Services.html" class="homebtn">Learn More</a>
+          <a href="Contact.html" class="homebtn">Contact Us</a>
+          <a href="Sign up.html" class="homebtn">Sign Up</a>
         </div>
 
-        <div class="blog-card second-spot">
-          <img src="images/blog img 6-7.png" alt="" class="blog-image u-text" />
-          <p class="p-blog">
-            June 7, 2022 - Teaching Tip Tuesday: If your child is having
-            difficulty with simple word problems, have them organize the
-            information using the ‘CUBES’ strategy. Sign up for tutoring, and
-            your kids can benefit from strategies like these.
-          </p>
-          <!-- <a href="#" class="blog-btn">Read More</a> -->
-        </div>
-
-        <div class="blog-card third-spot">
-          <img src="images/blog image 1.png" alt="" class="blog-image u-text" />
-          <p class="p-blog">
-            May 24, 2022 - Teaching Tip Tuesday: Using manipulatives helps
-            students to retain what they are learning. Using food keeps learners
-            engaged because playing with food is FUN! Introducing perimeter and
-            area using CHEEZ-ITs uses food as manipulatives. This is such a
-            delicious way to learn math! Sign up for tutoring and your kids can
-            benefit from strategies like these.
-          </p>
-          <!-- <a href="#" class="blog-btn">Read More</a> -->
-        </div>
-      </div>
-    </section>
-
-    <footer
-      class="u-align-center u-clearfix u-footer u-grey-80 u-footer"
-      id="sec-1144"
-    >
-      <div class="u-clearfix u-sheet-1 bottom-contianer">
-        <a
-          href="/"
-          class="u-logo u-image-1"
-          data-image-width="256"
-          data-image-height="191"
-        >
-          <img
-            src="images/logosmall.png"
-            class="footer-logo u-logo-image u-logo-image-1"
-          />
-        </a>
-
-        <div class="footer-block-1">
-          <a href="Services.html">Services</a>
-          <a href="About.html">About Us</a>
-          <a href="Contact.html">Contact Us</a>
-          <a href="privcay.html">Privacy Policy</a>
-        </div>
-        <div class="social-btns">
-          <div class="connect-margin">Connect with Us on Social Media</div>
+        <div class="home2-sec5">
           <a
             href="https://www.facebook.com/shiningbrighttutors"
             class="fa fa-facebook"
@@ -349,17 +276,18 @@
             class="fa fa-instagram"
             target="_blank"
           ></a>
+          <a
+            href="Contact.html"
+            class="fa fa-envelope-open"
+            style="
+              font-size: 35px;
+              color: white;
+              padding: 8px;
+              background-color: transparent;
+            "
+          ></a>
         </div>
-        <div class="footer-block-1">
-          <a href="Rates.html">Sign In</a>
-          <p>Drop Us a Line</p>
-          <input
-            type="email"
-            placeholder="Enter Your Email"
-            class="footer-email"
-          />
-        </div>
-      </div>
-    </footer>
+      </section>
+    </div>
   </body>
 </html>

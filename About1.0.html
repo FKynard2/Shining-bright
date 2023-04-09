@@ -3,12 +3,12 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="utf-8" />
-    <meta name="keywords" content="Our Services" />
+    <meta name="keywords" content="About Us" />
     <meta name="description" content="" />
     <meta name="page_type" content="np-template-header-footer-from-plugin" />
-    <title>Services</title>
+    <title>About</title>
     <link rel="stylesheet" href="nicepage.css" media="screen" />
-    <link rel="stylesheet" href="Services.css" media="screen" />
+    <link rel="stylesheet" href="About.css" media="screen" />
     <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon" />
     <link
       rel="stylesheet"
@@ -42,14 +42,14 @@
       }
     </script>
     <meta name="theme-color" content="#478ac9" />
-    <meta property="og:title" content="Services" />
+    <meta property="og:title" content="About" />
     <meta property="og:type" content="website" />
   </head>
   <body class="u-body u-xl-mode">
     <header class="u-clearfix u-header u-header" id="sec-9623">
       <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
         <a
-          href="https://nicepage.com"
+          href="/"
           class="u-image u-logo u-image-1"
           data-image-width="256"
           data-image-height="191"
@@ -186,277 +186,76 @@
         </nav>
       </div>
     </header>
-    <style>
-      .boxes {
-        position: relative;
-        width: 400px;
-        height: 400px;
-        list-style: none;
-        border-radius: 4px;
-        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.3);
-      }
-      .box-grid {
-        display: flex;
-        width: 100%;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 25px;
-      }
-      .pink {
-        background-color: #ec5db5;
-        color: white;
-        text-align: center;
-      }
-
-      .yellow {
-        background-color: #f6c21e;
-        color: #ec5db5;
-        text-align: center;
-      }
-
-      .purple {
-        background-color: #8e64c9;
-        color: white;
-        text-align: center;
-      }
-
-      .box-center {
-        width: 100%;
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        font-weight: 800;
-        font-size: 40px;
-        margin: 0;
-      }
-
-      .box-span {
-        font-size: 15px;
-      }
-
-      .a-btn {
-        position: absolute;
-        width: 12%;
-        top: 10%;
-        right: 10%;
-        background-color: #e9f2fa;
-        border-radius: 50%;
-        text-align: center;
-        font-size: 32px;
-        font-weight: 600;
-      }
-
-      .a-btn-2 {
-        position: absolute;
-        width: 18%;
-        bottom: 10%;
-        left: 10%;
-        border: 2px solid white;
-        color: white;
-        border-radius: 50%;
-        text-align: center;
-        font-size: 40px;
-        font-weight: 600;
-      }
-      .yellow .a-btn {
-        color: #f6c21e;
-        z-index: 2;
-      }
-
-      .pink .a-btn {
-        color: #ec5db5;
-      }
-      .purple .a-btn {
-        color: #8e64c9;
-      }
-      .u-body h1,
-      .u-body h2,
-      .u-body h3,
-      .u-body h4,
-      .u-body h5,
-      .u-body h6 {
-        padding: 0 73px;
-      }
-      .hero {
-        color: #ec5db5;
-      }
-      .hero-wraper {
-        display: flex;
-        align-items: center;
-        margin-left: 50px;
-      }
-      @media (max-width: 1600px) {
-        .boxes {
-          width: 20%;
-        }
-        .box-center {
-          font-size: 32px;
-        }
-
-        .u-body h1,
-        .u-body h2,
-        .u-body h3,
-        .u-body h4,
-        .u-body h5,
-        .u-body h6 {
-          padding: 0 56px;
-        }
-      }
-      @media (max-width: 1400px) {
-        .boxes {
-          width: 22%;
-          height: 300px;
-        }
-      }
-
-      @media (max-width: 1200px) {
-        .box-center {
-          font-size: 24px;
-        }
-        .u-body h1,
-        .u-body h2,
-        .u-body h3,
-        .u-body h4,
-        .u-body h5,
-        .u-body h6 {
-          padding: 0 53px;
-        }
-
-        .a-btn {
-          font-size: 21px;
-        }
-        .a-btn-2 {
-          font-size: 28px;
-        }
-      }
-      @media (max-width: 1000px) {
-        u-body h1,
-        .u-body h2,
-        .u-body h3,
-        .u-body h4,
-        .u-body h5,
-        .u-body h6 {
-          padding: 0px 29px;
-        }
-        .box-center {
-          font-size: 24px;
-        }
-        .boxes {
-          height: 225px;
-        }
-      }
-      @media (max-width: 700px) {
-        .boxes {
-          height: 300px;
-          width: 42%;
-        }
-
-        .box-center {
-          font-size: 36px;
-        }
-      }
-      @media (max-width: 550px) {
-        .boxes {
-          height: 250px;
-          width: 40%;
-        }
-
-        .box-center {
-          font-size: 24px;
-        }
-        u-body h1,
-        .u-body h2,
-        .u-body h3,
-        .u-body h4,
-        .u-body h5,
-        .u-body h6 {
-          padding: 0px 3px;
-        }
-        .a-btn {
-          font-size: 23px;
-          width: 27%;
-          height: 15%;
-        }
-      }
-      @media (max-width: 400px) {
-        .boxes {
-          height: 175px;
-          width: 40%;
-        }
-
-        .box-center {
-          font-size: 16px;
-        }
-        u-body h1,
-        .u-body h2,
-        .u-body h3,
-        .u-body h4,
-        .u-body h5,
-        .u-body h6 {
-          padding: 0px 23px;
-        }
-        .a-btn {
-          font-size: 10px;
-        }
-        .a-btn-2 {
-          font-size: 18px;
-        }
-        ul {
-          padding-left: 0;
-        }
-      }
-    </style>
-    <div class="hero-wraper">
-      <img
-        src="images/favicon.png"
-        alt=""
-        style="
-          width: 58px;
-          height: 56px;
-          border-radius: 50%;
-          background-color: #f6c21e;
-          padding: 3px;
-        "
-      />
-      <h1 class="hero" style="padding-left: 10px">Our Services</h1>
+    <div class="top-pic">
+      <img src="images/new vi.jpg" alt="" class="top-picture" />
+      <img src="images/top picture.png" alt="" class="top-picture-2" />
     </div>
-    <ul class="box-grid">
-      <li class="boxes yellow">
-        <h3 class="box-center">CONTRACT WITH A SCHOOL</h3>
-        <a href="Contact3.0.html" class="a-btn">&#128933;</a>
-      </li>
-      <li class="boxes pink">
-        <h3 class="box-center">ELEMENTARY SCHOOL TUTORING</h3>
-        <a href="spElementary.html" class="a-btn">&#128933;</a>
-      </li>
-      <li class="boxes purple">
-        <h3 class="box-center">MIDDLE SCHOOL TUTORING</h3>
-        <a href="spMiddleSchool.html" class="a-btn">&#128933;</a>
-      </li>
-      <li class="boxes pink">
-        <h3 class="box-center">HIGH SCHOOL TUTORING</h3>
-        <a href="spHighschool.html" class="a-btn">&#128933;</a>
-      </li>
-      <li class="boxes purple">
-        <h3 class="box-center">SIGN UP NOW</h3>
-        <a href="Sign up.html" class="a-btn-2">&#129122;</a>
-      </li>
-      <li class="boxes yellow">
-        <h3 class="box-center">STATE & DISTRICT TEST PREP</h3>
-        <a href="spStateTestPrep.html" class="a-btn">&#128933;</a>
-      </li>
-      <li class="boxes pink">
-        <h3 class="box-center">ACT/SAT TEST PREP</h3>
-        <a href="spActSatTestPrep.html" class="a-btn">&#128933;</a>
-      </li>
-      <li class="boxes yellow">
-        <h3 class="box-center">
-          EDUCATIONAL DIAGNOSTIC TESTING <br /><span class="box-span"
-            >**COMING SOON...</span
-          >
-        </h3>
-      </li>
-    </ul>
+    <section class="u-clearfix u-grey-5 u-section-1" id="sec-bcab">
+      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <div
+          class="u-clearfix u-expanded-width u-gutter-0 u-layout-wrap u-layout-wrap-1"
+        >
+          <div class="u-gutter-0 u-layout">
+            <div
+              class="u-align-left u-container-style u-layout-cell u-right-cell u-size-31 u-layout-cell-3"
+              src=""
+            >
+              <div class="u-container-layout u-container-layout-3">
+                <h2 class="u-text u-text-default u-text-1">About Us</h2>
+                <p class="u-text u-text-2">
+                  Shining Bright Tutors LLC is a tutoring company that places
+                  importance on student achievement first. Our goal is to CREATE
+                  BRIGHT FUTURES! We aim to serve students online in grades K-12
+                  across the United States. We specialize in one on one tutoring
+                  covering all core subjects and including Test Prep for state
+                  and district assessments as well as the college entry exams
+                  (SAT and ACT).
+                </p>
+
+                <h5>Meet Our Founder:</h5>
+                <div class="top-pic">
+                  <img
+                    src="images/karmens photo2.jpg"
+                    alt=""
+                    style="height: 300px"
+                  />
+                </div>
+
+                <p>
+                  Karmen Kynard, originally from Toledo, Ohio started tutoring
+                  in January 2017. She started simply because she wanted to
+                  provide a service to students. She is a certified educator for
+                  grades K-12 and has served students in both general education
+                  and special education settings. She graduated with her
+                  Master’s in Education from Bowling Green State University in
+                  Ohio with a focus on Special Education. Her specialty is
+                  working with struggling learners in all core subjects.
+                  Continuing her education gained her another Master's in
+                  Education for Educational Leadership.
+                </p>
+
+                <p>
+                  Over the course of her career she has had the opportunity to
+                  (change font?)work at schools located in 4 different states
+                  (Ohio, Wisconsin, Louisiana, and Texas) and 6 different cities
+                  (Toledo, Cleveland, Milwaukee, Baton Rouge, Lafayette,
+                  Austin). Due to teaching in multiple states, she has learned
+                  flexibility and how to adapt to differing state standards and
+                  curriculums.
+                </p>
+
+                <p>
+                  While she enjoyed tutoring, she realized that she could have a
+                  much larger impact if she started accepting and working with
+                  more tutors to support students and that when Shining Bright
+                  Tutors was born.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <footer
       class="u-align-center u-clearfix u-footer u-grey-80 u-footer"

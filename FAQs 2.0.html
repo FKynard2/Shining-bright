@@ -1,18 +1,6 @@
 <!DOCTYPE html>
 <html style="font-size: 16px">
   <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation&display=swap"
-      rel="stylesheet"
-    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="utf-8" />
     <meta name="keywords" content="Facts &amp;amp; Questions" />
@@ -57,13 +45,6 @@
     <meta property="og:title" content="FAQs" />
     <meta property="og:type" content="website" />
   </head>
-  <style>
-    body {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    }
-  </style>
   <body class="u-body u-xl-mode">
     <header class="u-clearfix u-header u-header" id="sec-9623">
       <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
@@ -170,7 +151,9 @@
                   class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"
                 >
                   <li class="u-nav-item">
-                    <a class="u-button-style u-nav-link" href="/">Home</a>
+                    <a class="u-button-style u-nav-link" href="/"
+                      >Home</a
+                    >
                   </li>
                   <li class="u-nav-item">
                     <a class="u-button-style u-nav-link" href="About.html"
@@ -205,727 +188,515 @@
         </nav>
       </div>
     </header>
-    <style>
-      .hero {
-        width: 100%;
-        height: 100vh;
-        position: relative;
-        display: flex;
-        justify-content: center;
-      }
-      .top-image {
-        position: absolute;
-        width: 100%;
-        height: 100vh;
-        top: 45%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        z-index: -1;
-        filter: brightness(187%);
-      }
-      .hero .faq-wrapper {
-        padding-left: 0;
-        margin-bottom: 6rem;
-      }
-
-      .faq-wrapper {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        width: 75%;
-      }
-      .faq-wrapper-middle {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        flex-direction: column;
-        align-items: center;
-      }
-      
-      .faq-wrapper-middle-2 {
-        display: flex;
-        width: 100%;
-        justify-content: space-between;
-        height: 10%;
-      }
-      .faq-bubble {
-        list-style: none;
-        border: 2px solid black;
-        width: 11%;
-        text-align: center;
-        text-decoration: underline;
-        padding: 38px;
-        border-radius: 50%;
-        color: #ec5db5;
-      }
-
-      .hero .faq-wrapper-middle {
-        margin-bottom: 15%;
-      }
-
-      .box {
-        list-style: none;
-        align-self: center;
-      }
-      .box .front {
-        border-radius: 50%;
-        background: #fff7e1;
-        border: 4px solid #e295c4;
-        backface-visibility: hidden;
-        transform: perspective(1000px) rotateY(0deg);
-        transition: 1s;
-        padding: 6rem;
-        box-shadow: 5px 6px 5px 1px rgba(0, 0, 0, 0.4);
-      }
-      .box:hover .front {
-        transform: perspective(1000px) rotateY(180deg);
-      }
-
-      .box .back {
-        position: absolute;
-        top: 10%;
-        left: 20%;
-        width: 60%;
-        min-height: 60%;
-        backface-visibility: hidden;
-        transform: perspective(1000px) rotateY(-180deg);
-        transition: 1s;
-        z-index: 1;
-        box-shadow: 5px 6px 5px 1px rgba(0, 0, 0, 0.3);
-        border-radius: 10px;
-
-        background-color: #9063cd;
-      }
-
-      .box .back::-webkit-scrollbar {
-        display: none;
-      }
-
-      .box:hover .back {
-        transform: perspective(1000px) rotateY(0deg);
-      }
-
-      /**********  front  **************/
-      .box .front .center {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        text-align: center;
-      }
-      .box .front .center img {
-        width: 100px;
-        height: 100px;
-      }
-      .box .front .center h1 {
-        font-size: 25px;
-        color: #e295c4;
-        white-space: nowrap;
-        text-decoration: underline;
-      }
-
-      /**********  back  **************/
-      .box .back .row {
-        position: relative;
-        width: 100%;
-      }
-      .box .back .row:nth-of-type(1) {
-        background: #f6d2e8;
-        border-bottom: 10px solid #fe4f02;
-        box-sizing: border-box;
-        text-align: center;
-        line-height: 75px;
-        border-radius: 10px 10px 0px 0px;
-      }
-      .box .back .row:nth-of-type(2) {
-        background: #9063cd;
-        padding: 20px 30px;
-        box-sizing: border-box;
-        border-radius: 0px 0px 10px 10px;
-      }
-
-      .box .back .row img {
-        width: 420px;
-        height: 164px;
-        display: inline-block;
-        vertical-align: top;
-        margin-right: 28px;
-      }
-      .box .back .row h1 {
-        font-size: 3.4vw;
-        color: white;
-
-        display: inline-block;
-        font-family: 'Edu NSW ACT Foundation', cursive;
-        text-transform: uppercase;
-        margin: 0;
-      }
-      .box .back .row span {
-        position: relative;
-        display: block;
-        font-size: 22px;
-        color: #fff;
-        box-sizing: border-box;
-        padding: 0 0 0 35px;
-        margin-bottom: 5px;
-        font-family: 'Edu NSW ACT Foundation', cursive;
-        text-transform: uppercase;
-      }
-      .box .back .row span::before {
-        content: '';
-        font-family: ananias;
-        position: absolute;
-        top: 2px;
-        bottom: 2px;
-        left: 2px;
-        color: #fff;
-        font-size: 20px;
-      }
-
-      .hero-wraper {
-        display: flex;
-        margin-left: 8rem;
-        align-items: center;
-        height: 40px;
-      }
-
-      @media (max-width: 1600px) {
-        .box .front {
-          padding: 5rem;
-        }
-        .box .front .center h1 {
-          font-size: 1.3rem;
-        }
-
-        .faq-wrapper-middle-1 .box .back .row span {
-          font-size: 15px;
-        }
-      }
-
-      @media (max-width: 1300px) {
-        .top-image {
-          height: 100vh;
-        }
-        /* This is for the backcard */
-        .box .back {
-          top: 0;
-          width: 65%;
-          min-height: 50%;
-        }
-        .box .back .row h1 {
-          margin: 0;
-        }
-        .box .back .row img {
-          height: 180px;
-        }
-      }
-      @media (max-width: 1200px) {
-        .top-image {
-          top: 45%;
-        }
-        .hero .faq-wrapper {
-          margin-bottom: 2rem;
-        }
-        .box .front .center h1 {
-          font-size: 22px;
-        }
-
-        /* This is for the backcard */
-
-        .box .back .row span {
-          padding: 0;
-        }
-        .box .back .row:nth-of-type(2) {
-          padding: 10px 20px;
-        }
-        .box .back {
-          min-height: 80%;
-        }
-      }
-      @media (max-width: 1050px) {
-        .box .front {
-          padding: 4.7rem;
-        }
-      }
-      @media (max-width: 1000px) {
-        .top-image {
-          height: 75vh;
-          top: 45%;
-        }
-        .faq-wrapper {
-          width: 50%;
-        }
-
-        .hero .faq-wrapper {
-          margin-bottom: 10rem;
-        }
-
-        .box .back {
-          min-height: 60%;
-        }
-        .box .back .row h1 {
-          font-size: 3.7vw;
-        }
-        .box .front .center h1 {
-          font-size: 1.2rem;
-        }
-
-        /* This is for the backcard */
-        .box .back {
-          min-height: 40%;
-          top: 25%;
-        }
-        .box .back .row img {
-          width: 210px;
-          height: 90px;
-        }
-
-        .box .back .row:nth-of-type(1) {
-          border-bottom: 4px solid #fe4f02;
-          text-align: center;
-          line-height: 11px;
-        }
-        .box .back .row span {
-          font-size: 14px;
-        }
-        .box .back .row:nth-of-type(2) {
-          padding: 10px 10px;
-        }
-      }
-
-      @media (max-width: 767px) {
-        .top-image {
-          height: 65vh;
-          top: 50%;
-        }
-        .box .front {
-          padding: 3.4rem;
-        }
-        .box .front .center h1 {
-          font-size: 0.9rem;
-        }
-        .faq-wrapper-middle-1 {
-          margin-bottom: 0;
-          flex-direction: column;
-          justify-content: center;
-        }
-        .faq-wrapper-middle-2 {
-          height: 50%;
-          flex-direction: column;
-          justify-content: space-around;
-        }
-        .hero .faq-wrapper-middle {
-          gap: 2rem;
-          width: 50%;
-        }
-        .hero .faq-wrapper {
-          margin-bottom: 7rem;
-        }
-
-        /* This is for the backcard */
-        .box .back .row img {
-          width: 215px;
-          height: 95px;
-        }
-        .box .back .row span {
-          font-size: 12px;
-        }
-        .box .back .row:nth-of-type(2) {
-          padding: 4px 4px;
-        }
-      }
-      @media (max-width: 500px) {
-        .top-image {
-          height: 50vh;
-          top: 45%;
-        }
-
-        /* This for the back card */
-        .box .back {
-          top: 10%;
-          width: 65%;
-          transition: 1s;
-          z-index: 3;
-          min-height: 50%;
-        }
-        .box .back .row h1 {
-          font-size: 1.6rem;
-          display: revert;
-          padding: 0px;
-          margin-top: 30px;
-        }
-        .box .back .row span {
-          font-size: 12px;
-          padding: 0;
-        }
-        .box .back .row:nth-of-type(2) {
-          padding: 10px 10px;
-        }
-        .faq-wrapper-middle-1 .box .back .row span {
-          font-size: 12px;
-        }
-      }
-      @media (max-width: 896px) and (max-height: 414px) {
-        .hero {
-          height: 200vh;
-        }
-        .hero .faq-wrapper-middle {
-          height: 165vh;
-        }
-      }
-      
-    </style>
-    <div class="hero-wraper">
-      <img
-        src="images/favicon.png"
-        alt=""
-        style="
-          width: 50px;
-          height: 50px;
-          border-radius: 50%;
-          background-color: #f6c21e;
-          padding: 3px;
-        "
-      />
-      <h1
-        class="faq-hero"
-        style="
-          padding-left: 10px;
-          font-size: 32px;
-          font-weight: 500;
-          color: #fe4f02;
-        "
-      >
-        FAQs
-      </h1>
-    </div>
-    <div class="hero">
-      <img
-        src="images/customcolor_logo_customcolor_background.png"
-        alt=""
-        class="top-image"
-      />
-
-      <ul class="faq-wrapper">
-        <li class="box">
-          <div class="front">
-            <div class="center">
-              <h1>
-                Where does <br />
-                tutoring take <br />
-                place?
-              </h1>
-            </div>
-          </div>
-          <div class="back">
-            <div class="row">
-              <img
-                src="images/customcolor_logo_transparent_background.png"
-                alt=""
-              />
-              <h1>Where does tutoring take place?</h1>
-            </div>
-            <div class="row">
-              <span
-                >Tutoring sessions typically take place in a virtual setting.
-                You will meet with your tutor either through Google Meet or
-                Zoom. When you log in to your portal and check your calendar,
-                you will be able to access the session link there.</span
-              >
-            </div>
-          </div>
-        </li>
-        <li class="box">
-          <div class="front">
-            <div class="center">
-              <h1>
-                Are you able <br />
-                tutor in <br />
-                person?
-              </h1>
-            </div>
-          </div>
-          <div class="back">
-            <div class="row">
-              <img
-                src="images/customcolor_logo_transparent_background.png"
-                alt=""
-              />
-              <h1>Are you able to tutor in person?</h1>
-            </div>
-            <div class="row">
-              <span
-                >At this time, in person tutoring is only available in the
-                Austin area. If you are in austin or surrounding areas, in
-                person tutoring is limited and slots fill up quickly. All in
-                person tutoring incurs an additional fee. Please contact us to
-                see if we can accommodate your in person needs.</span
-              >
-            </div>
-          </div>
-        </li>
-        <li class="box">
-          <div class="front">
-            <div class="center">
-              <h1>
-                What do I <br />
-                need for <br />
-                tutoring?
-              </h1>
-            </div>
-          </div>
-          <div class="back">
-            <div class="row">
-              <img
-                src="images/customcolor_logo_transparent_background.png"
-                alt=""
-              />
-              <h1>What do I need for tutoring?</h1>
-            </div>
-            <div class="row">
-              <span
-                >Our platform is web based, therefore it works anywhere that has
-                internet access. This includes on a phone, ipad/tablet, laptop,
-                etc. Ideally a laptop would work best. You will also need a
-                strong internet connection.</span
-              >
-            </div>
-          </div>
-        </li>
-      </ul>
-      <ul class="faq-wrapper-middle">
-        <div class="faq-wrapper-middle-1">
-          <li class="box">
-            <div class="front">
-              <div class="center">
-                <h1>
-                  Am I able to <br />
-                  check my <br />
-                  child's <br />
-                  progress?
-                </h1>
-              </div>
-            </div>
-            <div class="back">
-              <div class="row">
-                <img
-                  src="images/customcolor_logo_transparent_background.png"
-                  alt=""
-                />
-                <h1>
-                  Am I able to check my child’s <br />
-                  progress?
-                </h1>
-              </div>
-              <div class="row">
-                <span
-                  >As a parent, you will have access to the notes left by the
-                  tutor at the end of each session, which details your child's
-                  progress and performance.</span
-                >
-              </div>
-            </div>
-          </li>
+    <section
+      class="u-align-center u-clearfix u-grey-10 u-section-1"
+      id="sec-fc43"
+    >
+      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <div class="top-img">
+          <img src="images/badge logo.png" alt="" class="top-image" />
         </div>
-        <div class="faq-wrapper-middle-2">
-          <li class="box">
-            <div class="front">
-              <div class="center">
-                <h1>
-                  What is your <br />
-                  cancellation <br />
-                  policy?
-                </h1>
-              </div>
-            </div>
-            <div class="back">
-              <div class="row">
-                <img
-                  src="images/customcolor_logo_transparent_background.png"
-                  alt=""
-                />
-                <h1>What is your cancellation policy?</h1>
-              </div>
-              <div class="row">
-                <span
-                  >Cancellation Policy for Students: If you cancel a tutoring
-                  session at least 24 hours before the scheduled time, you are
-                  eligible for a refund or rescheduling of the session. In case
-                  of a cancellation within 24 hours of the session, you will
-                  receive a refund of 50%, credited to your account. However, if
-                  you fail to attend the session without prior notice, there
-                  will be no refund. <br /><br />
-                  Cancellation Policy for Tutors: If a tutor cancels a session
-                  at least 24 hours before the scheduled time, you are eligible
-                  for rescheduling the session. In case of a cancellation within
-                  24 hours of the session, you will receive one hour of free
-                  tutoring. If the tutor fails to show up for the session
-                  without prior notice, you are eligible for two hours of free
-                  tutoring.
-                </span>
-              </div>
-            </div>
-          </li>
-          <li class="box">
-            <div class="front">
-              <div class="center">
-                <h1>
-                  Are payment <br />
-                  plans <br />
-                  available?
-                </h1>
-              </div>
-            </div>
-            <div class="back">
-              <div class="row">
-                <img
-                  src="images/customcolor_logo_transparent_background.png"
-                  alt=""
-                />
-                <h1>Are payment plans available?</h1>
-              </div>
-              <div class="row">
-                <span
-                  >The payment deadline is the date specified on the invoice,
-                  usually 24 hours before your first tutoring session. If you
-                  require a payment plan, please contact us, and we will assist
-                  you in setting it up. <br /><br />
-                  Please be aware that all payment plans will involve a monthly
-                  fee and require you to have a credit card on file with
-                  auto-pay enabled. Additionally, credit card payments will
-                  include a convenience fee of 4%.</span
+        <h2 class="u-text u-text-default u-text-1">
+          Frequently Asked Questions:
+        </h2>
+
+        <div
+          class="u-accordion u-expanded-width u-faq u-spacing-10 u-accordion-1"
+        >
+          <div class="u-accordion-item">
+            <a
+              class="active u-accordion-link u-active-white u-border-1 u-border-grey-25 u-button-style u-text-active-black u-text-grey-50 u-text-hover-black u-accordion-link-1"
+              id="link-accordion-f600"
+              aria-controls="accordion-f600"
+              aria-selected="true"
+            >
+              <span class="u-accordion-link-text"
+                >Where does tutoring take place?</span
+              ><span
+                class="u-accordion-link-icon u-icon u-text-grey-50 u-icon-1"
+                ><svg
+                  class="u-svg-link"
+                  preserveAspectRatio="xMidYMin slice"
+                  viewBox="0 0 448 448"
+                  
                 >
-              </div>
-            </div>
-          </li>
-        </div>
-        <div class="faq-wrapper-middle-3">
-          <li class="box">
-            <div class="front">
-              <div class="center">
-                <h1>
-                  Is there a <br />
-                  sibling <br />
-                  discount?
-                </h1>
-              </div>
-            </div>
-            <div class="back">
-              <div class="row">
-                <img
-                  src="images/customcolor_logo_transparent_background.png"
-                  alt=""
-                />
-                <h1>Is there a sibling discount?</h1>
-              </div>
-              <div class="row">
-                <span
-                  >Yes, a 5% discount will be provided for each sibling enrolled
-                  in our tutoring services.</span
+                  <use
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="#svg-66d8"
+                  ></use></svg
+                ><svg
+                  class="u-svg-content"
+                  viewBox="0 0 448 448"
+                  id="svg-66d8"
+                  
                 >
+                  <path
+                    d="m272 184c-4.417969 0-8-3.582031-8-8v-176h-80v176c0 4.417969-3.582031 8-8 8h-176v80h176c4.417969 0 8 3.582031 8 8v176h80v-176c0-4.417969 3.582031-8 8-8h176v-80zm0 0"
+                  ></path></svg
+              ></span>
+            </a>
+            <div
+              class="u-accordion-active u-accordion-pane u-container-style u-shape-rectangle u-accordion-pane-1"
+              id="accordion-f600"
+              aria-labelledby="link-accordion-f600"
+            >
+              <div class="u-container-layout u-container-layout-1">
+                <div class="fr-view u-clearfix u-rich-text u-text">
+                  <p>
+                    All tutoring takes place in online using our tutoring
+                    platform.
+                  </p>
+                </div>
               </div>
             </div>
-          </li>
+          </div>
+          <div class="u-accordion-item">
+            <a
+              class="u-accordion-link u-active-white u-border-1 u-border-grey-25 u-button-style u-text-active-black u-text-grey-50 u-text-hover-black u-accordion-link-2"
+              id="link-accordion-72f4"
+              aria-controls="accordion-72f4"
+              aria-selected="false"
+            >
+              <span class="u-accordion-link-text"
+                >Are you able to tutor in person?</span
+              ><span
+                class="u-accordion-link-icon u-icon u-text-grey-50 u-icon-2"
+                ><svg
+                  class="u-svg-link"
+                  preserveAspectRatio="xMidYMin slice"
+                  viewBox="0 0 448 448"
+                  
+                >
+                  <use
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="#svg-e303"
+                  ></use></svg
+                ><svg
+                  class="u-svg-content"
+                  viewBox="0 0 448 448"
+                  id="svg-e303"
+                 
+                >
+                  <path
+                    d="m272 184c-4.417969 0-8-3.582031-8-8v-176h-80v176c0 4.417969-3.582031 8-8 8h-176v80h176c4.417969 0 8 3.582031 8 8v176h80v-176c0-4.417969 3.582031-8 8-8h176v-80zm0 0"
+                  ></path></svg
+              ></span>
+            </a>
+            <div
+              class="u-accordion-pane u-container-style u-shape-rectangle u-accordion-pane-2"
+              id="accordion-72f4"
+              aria-labelledby="link-accordion-72f4"
+            >
+              <div class="u-container-layout u-container-layout-2">
+                <div class="fr-view u-clearfix u-rich-text u-text">
+                  <p>
+                    At this time in person tutoring services are not offered.
+                    Keep checking back as we continue to add programs and
+                    services to our lists.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="u-accordion-item">
+            <a
+              class="u-accordion-link u-active-white u-border-1 u-border-grey-25 u-button-style u-text-active-black u-text-grey-50 u-text-hover-black u-accordion-link-3"
+              id="link-accordion-854e"
+              aria-controls="accordion-854e"
+              aria-selected="false"
+            >
+              <span class="u-accordion-link-text">What do I need to tutor?</span
+              ><span
+                class="u-accordion-link-icon u-icon u-text-grey-50 u-icon-3"
+                ><svg
+                  class="u-svg-link"
+                  preserveAspectRatio="xMidYMin slice"
+                  viewBox="0 0 448 448"
+                  
+                >
+                  <use
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="#svg-fade"
+                  ></use></svg
+                ><svg
+                  class="u-svg-content"
+                  viewBox="0 0 448 448"
+                  id="svg-fade"
+                  
+                >
+                  <path
+                    d="m272 184c-4.417969 0-8-3.582031-8-8v-176h-80v176c0 4.417969-3.582031 8-8 8h-176v80h176c4.417969 0 8 3.582031 8 8v176h80v-176c0-4.417969 3.582031-8 8-8h176v-80zm0 0"
+                  ></path></svg
+              ></span>
+            </a>
+            <div
+              class="u-accordion-pane u-container-style u-shape-rectangle u-accordion-pane-3"
+              id="accordion-854e"
+              aria-labelledby="link-accordion-854e"
+            >
+              <div class="u-container-layout u-container-layout-3">
+                <div class="u-clearfix u-rich-text u-text">
+                  <p>
+                    Our platform is web based, therefore it works anywhere that
+                    has internet access. This includes on a phone, ipad/tablet,
+                    laptop, etc. Ideally a laptop would work best. You will also
+                    need a strong internet connection.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="u-accordion-item">
+            <a
+              class="u-accordion-link u-active-white u-border-1 u-border-grey-25 u-button-style u-text-active-black u-text-grey-50 u-text-hover-black u-accordion-link-3"
+              id="link-accordion-854e"
+              aria-controls="accordion-854e"
+              aria-selected="false"
+            >
+              <span class="u-accordion-link-text"
+                >My child needs to work on school work. Is that possible?</span
+              ><span
+                class="u-accordion-link-icon u-icon u-text-grey-50 u-icon-3"
+                ><svg
+                  class="u-svg-link"
+                  preserveAspectRatio="xMidYMin slice"
+                  viewBox="0 0 448 448"
+                  
+                >
+                  <use
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="#svg-fade"
+                  ></use></svg
+                ><svg
+                  class="u-svg-content"
+                  viewBox="0 0 448 448"
+                  id="svg-fade"
+                
+                >
+                  <path
+                    d="m272 184c-4.417969 0-8-3.582031-8-8v-176h-80v176c0 4.417969-3.582031 8-8 8h-176v80h176c4.417969 0 8 3.582031 8 8v176h80v-176c0-4.417969 3.582031-8 8-8h176v-80zm0 0"
+                  ></path></svg
+              ></span>
+            </a>
+            <div
+              class="u-accordion-pane u-container-style u-shape-rectangle u-accordion-pane-3"
+              id="accordion-854e"
+              aria-labelledby="link-accordion-854e"
+            >
+              <div class="u-container-layout u-container-layout-3">
+                <div class="u-clearfix u-rich-text u-text">
+                  <p>
+                    Absolutely! You will let your tutor know what materials you
+                    will be using. You can scan an upload them in your portfolio
+                    and send them to your tutor so they may be prepared for your
+                    lesson.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="u-accordion-item">
+            <a
+              class="u-accordion-link u-active-white u-border-1 u-border-grey-25 u-button-style u-text-active-black u-text-grey-50 u-text-hover-black u-accordion-link-3"
+              id="link-accordion-854e"
+              aria-controls="accordion-854e"
+              aria-selected="false"
+            >
+              <span class="u-accordion-link-text"
+                >Must my child complete a Diagnostic Assessment before tutoring
+                begins?</span
+              ><span
+                class="u-accordion-link-icon u-icon u-text-grey-50 u-icon-3"
+                ><svg
+                  class="u-svg-link"
+                  preserveAspectRatio="xMidYMin slice"
+                  viewBox="0 0 448 448"
+                
+                >
+                  <use
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="#svg-fade"
+                  ></use></svg
+                ><svg
+                  class="u-svg-content"
+                  viewBox="0 0 448 448"
+                  id="svg-fade"
+              
+                >
+                  <path
+                    d="m272 184c-4.417969 0-8-3.582031-8-8v-176h-80v176c0 4.417969-3.582031 8-8 8h-176v80h176c4.417969 0 8 3.582031 8 8v176h80v-176c0-4.417969 3.582031-8 8-8h176v-80zm0 0"
+                  ></path></svg
+              ></span>
+            </a>
+            <div
+              class="u-accordion-pane u-container-style u-shape-rectangle u-accordion-pane-3"
+              id="accordion-854e"
+              aria-labelledby="link-accordion-854e"
+            >
+              <div class="u-container-layout u-container-layout-3">
+                <div class="u-clearfix u-rich-text u-text">
+                  <p>
+                    This is not a requirement. Your tutor will reach out to you
+                    to talk about how your child is doing and where they are
+                    performing. When your tutor starts, depending on your goals,
+                    they may complete an informal assessment?
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="u-accordion-item">
+            <a
+              class="u-accordion-link u-active-white u-border-1 u-border-grey-25 u-button-style u-text-active-black u-text-grey-50 u-text-hover-black u-accordion-link-3"
+              id="link-accordion-854e"
+              aria-controls="accordion-854e"
+              aria-selected="false"
+            >
+              <span class="u-accordion-link-text"
+                >My child has a short attention spans, do you provide tutoring
+                for less than an hour? </span
+              ><span
+                class="u-accordion-link-icon u-icon u-text-grey-50 u-icon-3"
+                ><svg
+                  class="u-svg-link"
+                  preserveAspectRatio="xMidYMin slice"
+                  viewBox="0 0 448 448"
+                  
+                >
+                  <use
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="#svg-fade"
+                  ></use></svg
+                ><svg
+                  class="u-svg-content"
+                  viewBox="0 0 448 448"
+                  id="svg-fade"
+                 
+                >
+                  <path
+                    d="m272 184c-4.417969 0-8-3.582031-8-8v-176h-80v176c0 4.417969-3.582031 8-8 8h-176v80h176c4.417969 0 8 3.582031 8 8v176h80v-176c0-4.417969 3.582031-8 8-8h176v-80zm0 0"
+                  ></path></svg
+              ></span>
+            </a>
+            <div
+              class="u-accordion-pane u-container-style u-shape-rectangle u-accordion-pane-3"
+              id="accordion-854e"
+              aria-labelledby="link-accordion-854e"
+            >
+              <div class="u-container-layout u-container-layout-3">
+                <div class="u-clearfix u-rich-text u-text">
+                  <p>
+                    We sure do! We provide tutoring in as little as 30 minute
+                    sessions.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="u-accordion-item">
+            <a
+              class="u-accordion-link u-active-white u-border-1 u-border-grey-25 u-button-style u-text-active-black u-text-grey-50 u-text-hover-black u-accordion-link-3"
+              id="link-accordion-854e"
+              aria-controls="accordion-854e"
+              aria-selected="false"
+            >
+              <span class="u-accordion-link-text"
+                >Am I able to check my child’s progress?</span
+              ><span
+                class="u-accordion-link-icon u-icon u-text-grey-50 u-icon-3"
+                ><svg
+                  class="u-svg-link"
+                  preserveAspectRatio="xMidYMin slice"
+                  viewBox="0 0 448 448"
+                  
+                >
+                  <use
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="#svg-fade"
+                  ></use></svg
+                ><svg
+                  class="u-svg-content"
+                  viewBox="0 0 448 448"
+                  id="svg-fade"
+                  
+                >
+                  <path
+                    d="m272 184c-4.417969 0-8-3.582031-8-8v-176h-80v176c0 4.417969-3.582031 8-8 8h-176v80h176c4.417969 0 8 3.582031 8 8v176h80v-176c0-4.417969 3.582031-8 8-8h176v-80zm0 0"
+                  ></path></svg
+              ></span>
+            </a>
+            <div
+              class="u-accordion-pane u-container-style u-shape-rectangle u-accordion-pane-3"
+              id="accordion-854e"
+              aria-labelledby="link-accordion-854e"
+            >
+              <div class="u-container-layout u-container-layout-3">
+                <div class="u-clearfix u-rich-text u-text">
+                  <p>
+                    As a parent you will have access to see the notes that the
+                    tutor leaves that discusses how your child is doing at the
+                    end of each session
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="u-accordion-item">
+            <a
+              class="u-accordion-link u-active-white u-border-1 u-border-grey-25 u-button-style u-text-active-black u-text-grey-50 u-text-hover-black u-accordion-link-3"
+              id="link-accordion-854e"
+              aria-controls="accordion-854e"
+              aria-selected="false"
+            >
+              <span class="u-accordion-link-text"
+                >Are payment plans available?</span
+              ><span
+                class="u-accordion-link-icon u-icon u-text-grey-50 u-icon-3"
+                ><svg
+                  class="u-svg-link"
+                  preserveAspectRatio="xMidYMin slice"
+                  viewBox="0 0 448 448"
+                 
+                >
+                  <use
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="#svg-fade"
+                  ></use></svg
+                ><svg
+                  class="u-svg-content"
+                  viewBox="0 0 448 448"
+                  id="svg-fade"
+                  
+                >
+                  <path
+                    d="m272 184c-4.417969 0-8-3.582031-8-8v-176h-80v176c0 4.417969-3.582031 8-8 8h-176v80h176c4.417969 0 8 3.582031 8 8v176h80v-176c0-4.417969 3.582031-8 8-8h176v-80zm0 0"
+                  ></path></svg
+              ></span>
+            </a>
+            <div
+              class="u-accordion-pane u-container-style u-shape-rectangle u-accordion-pane-3"
+              id="accordion-854e"
+              aria-labelledby="link-accordion-854e"
+            >
+              <div class="u-container-layout u-container-layout-3">
+                <div class="u-clearfix u-rich-text u-text">
+                  <p>
+                    While payment for your session is due 12 hours before your
+                    session begins, we can design packages to meet your needs.
+                    Please reach out to us so that we may design a package that
+                    meets your needs and fits your budget. Please note, if
+                    payments are not received before the sessions begin, they
+                    will be automatically cancelled.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="u-accordion-item">
+            <a
+              class="u-accordion-link u-active-white u-border-1 u-border-grey-25 u-button-style u-text-active-black u-text-grey-50 u-text-hover-black u-accordion-link-3"
+              id="link-accordion-854e"
+              aria-controls="accordion-854e"
+              aria-selected="false"
+            >
+              <span class="u-accordion-link-text"
+                >What is your cancellation policy?</span
+              ><span
+                class="u-accordion-link-icon u-icon u-text-grey-50 u-icon-3"
+                ><svg
+                  class="u-svg-link"
+                  preserveAspectRatio="xMidYMin slice"
+                  viewBox="0 0 448 448"
+                  
+                >
+                  <use
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="#svg-fade"
+                  ></use></svg
+                ><svg
+                  class="u-svg-content"
+                  viewBox="0 0 448 448"
+                  id="svg-fade"
+                  
+                >
+                  <path
+                    d="m272 184c-4.417969 0-8-3.582031-8-8v-176h-80v176c0 4.417969-3.582031 8-8 8h-176v80h176c4.417969 0 8 3.582031 8 8v176h80v-176c0-4.417969 3.582031-8 8-8h176v-80zm0 0"
+                  ></path></svg
+              ></span>
+            </a>
+            <div
+              class="u-accordion-pane u-container-style u-shape-rectangle u-accordion-pane-3"
+              id="accordion-854e"
+              aria-labelledby="link-accordion-854e"
+            >
+              <div class="u-container-layout u-container-layout-3">
+                <div class="u-clearfix u-rich-text u-text">
+                  <p>
+                    If you cancel a session 24 hours in advance, you are
+                    eligible for a refund or reschedule.
+                  </p>
+                  <p>
+                    If you cancel less than 24 hours in advance, you are
+                    eligible for a refund of 50%.
+                  </p>
+                  <p>If you are a no show, there isn’t a refund.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="u-accordion-item">
+            <a
+              class="u-accordion-link u-active-white u-border-1 u-border-grey-25 u-button-style u-text-active-black u-text-grey-50 u-text-hover-black u-accordion-link-3"
+              id="link-accordion-854e"
+              aria-controls="accordion-854e"
+              aria-selected="false"
+            >
+              <span class="u-accordion-link-text"
+                >Is there a sibling discount?</span
+              ><span
+                class="u-accordion-link-icon u-icon u-text-grey-50 u-icon-3"
+                ><svg
+                  class="u-svg-link"
+                  preserveAspectRatio="xMidYMin slice"
+                  viewBox="0 0 448 448"
+                 
+                >
+                  <use
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="#svg-fade"
+                  ></use></svg
+                ><svgbold-weight
+                  class="u-svg-content"
+                  viewBox="0 0 448 448"
+                  id="svg-fade"
+                 
+                >
+                  <path
+                    d="m272 184c-4.417969 0-8-3.582031-8-8v-176h-80v176c0 4.417969-3.582031 8-8 8h-176v80h176c4.417969 0 8 3.582031 8 8v176h80v-176c0-4.417969 3.582031-8 8-8h176v-80zm0 0"
+                  ></path></svg
+              ></span>
+            </a>
+            <div
+              class="u-accordion-pane u-container-style u-shape-rectangle u-accordion-pane-3"
+              id="accordion-854e"
+              aria-labelledby="link-accordion-854e"
+            >
+              <div class="u-container-layout u-container-layout-3">
+                <div class="u-clearfix u-rich-text u-text">
+                  <p>Yes, each sibling will receive a 5% discount.</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </ul>
-      <ul class="faq-wrapper">
-        <li class="box">
-          <div class="front">
-            <div class="center">
-              <h1>
-                Can my <br />
-                child receive <br />
-                help with <br />
-                their school <br />
-                work?
-              </h1>
-            </div>
-          </div>
-          <div class="back">
-            <div class="row">
-              <img
-                src="images/customcolor_logo_transparent_background.png"
-                alt=""
-              />
-              <h1>Can my child receive help on schoolwork?</h1>
-            </div>
-            <div class="row">
-              <span
-                >Certainly! You can inform your tutor about the materials you
-                plan to use during your session. You may upload and share the
-                documents by scanning them and sending them to your tutor
-                beforehand. This allows your tutor to be fully prepared for your
-                lesson.</span
-              >
-            </div>
-          </div>
-        </li>
-        <li class="box">
-          <div class="front">
-            <div class="center">
-              <h1>
-                Is a diagnostic <br />
-                assessment <br />
-                required before <br />
-                tutoring?
-              </h1>
-            </div>
-          </div>
-          <div class="back">
-            <div class="row">
-              <img
-                src="images/customcolor_logo_transparent_background.png"
-                alt=""
-              />
-              <h1>
-                Is a diagnostic assessment required <br />
-                before tutoring?
-              </h1>
-            </div>
-            <div class="row">
-              <span
-                >This is not mandatory. Your tutor will initiate contact to
-                discuss your child's current performance and progress. Depending
-                on your objectives, your tutor may conduct an informal
-                assessment during the initial sessions.</span
-              >
-            </div>
-          </div>
-        </li>
-        <li class="box">
-          <div class="front">
-            <div class="center">
-              <h1>
-                Are 30-
-                <br />minute <br />tutoring <br />
-                sessions <br />
-                available?
-              </h1>
-            </div>
-          </div>
-          <div class="back">
-            <div class="row">
-              <img
-                src="images/customcolor_logo_transparent_background.png"
-                alt=""
-              />
-              <h1>
-                Are 30-minute tutoring <br />
-                sessions available?
-              </h1>
-            </div>
-            <div class="row">
-              <span
-                >Yes, we do offer 30-minute tutoring sessions to accommodate
-                younger students, those who may have shorter attention spans, or
-                difficulty sitting still for extended periods. However, it's
-                important to note that more complex skills or topics may require
-                additional time to fully cover and master.</span
-              >
-            </div>
-          </div>
-        </li>
-      </ul>
+      </div>
+    </section>
+
+    <div class="bottom-ques">
+      <p class="bold-weight">
+        If you have any additional questions please don't hesitate to contact
+        us.
+      </p>
     </div>
 
     <footer

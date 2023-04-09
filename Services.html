@@ -186,155 +186,277 @@
         </nav>
       </div>
     </header>
+    <style>
+      .boxes {
+        position: relative;
+        width: 400px;
+        height: 400px;
+        list-style: none;
+        border-radius: 4px;
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.3);
+      }
+      .box-grid {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 25px;
+      }
+      .pink {
+        background-color: #ec5db5;
+        color: white;
+        text-align: center;
+      }
 
-    <section class="u-align-center u-clearfix u-section-1" id="carousel_7d14">
-      <div
-        class="u-clearfix u-sheet u-valign-middle-md u-valign-middle-sm u-valign-middle-xs u-sheet-1"
-      >
-        <h2 class="u-align-left u-text u-text-1">Our Services</h2>
-        <div
-          class="u-container-style u-expanded-width-md u-group u-palette-5-light-2 u-shape-rectangle u-group-1"
-          style="background-color: white"
-        >
-          <div
-            class="u-container-layout u-valign-middle-md u-valign-middle-sm u-valign-middle-xs u-container-layout-1"
+      .yellow {
+        background-color: #f6c21e;
+        color: #ec5db5;
+        text-align: center;
+      }
+
+      .purple {
+        background-color: #8e64c9;
+        color: white;
+        text-align: center;
+      }
+
+      .box-center {
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        font-weight: 800;
+        font-size: 40px;
+        margin: 0;
+      }
+
+      .box-span {
+        font-size: 15px;
+      }
+
+      .a-btn {
+        position: absolute;
+        width: 12%;
+        top: 10%;
+        right: 10%;
+        background-color: #e9f2fa;
+        border-radius: 50%;
+        text-align: center;
+        font-size: 32px;
+        font-weight: 600;
+      }
+
+      .a-btn-2 {
+        position: absolute;
+        width: 18%;
+        bottom: 10%;
+        left: 10%;
+        border: 2px solid white;
+        color: white;
+        border-radius: 50%;
+        text-align: center;
+        font-size: 40px;
+        font-weight: 600;
+      }
+      .yellow .a-btn {
+        color: #f6c21e;
+        z-index: 2;
+      }
+
+      .pink .a-btn {
+        color: #ec5db5;
+      }
+      .purple .a-btn {
+        color: #8e64c9;
+      }
+      .u-body h1,
+      .u-body h2,
+      .u-body h3,
+      .u-body h4,
+      .u-body h5,
+      .u-body h6 {
+        padding: 0 73px;
+      }
+      .hero {
+        color: #ec5db5;
+      }
+      .hero-wraper {
+        display: flex;
+        align-items: center;
+        margin-left: 50px;
+      }
+      @media (max-width: 1600px) {
+        .boxes {
+          width: 20%;
+        }
+        .box-center {
+          font-size: 32px;
+        }
+
+        .u-body h1,
+        .u-body h2,
+        .u-body h3,
+        .u-body h4,
+        .u-body h5,
+        .u-body h6 {
+          padding: 0 56px;
+        }
+      }
+      @media (max-width: 1400px) {
+        .boxes {
+          width: 22%;
+          height: 300px;
+        }
+      }
+
+      @media (max-width: 1200px) {
+        .box-center {
+          font-size: 24px;
+        }
+        .u-body h1,
+        .u-body h2,
+        .u-body h3,
+        .u-body h4,
+        .u-body h5,
+        .u-body h6 {
+          padding: 0 53px;
+        }
+
+        .a-btn {
+          font-size: 21px;
+        }
+        .a-btn-2 {
+          font-size: 28px;
+        }
+      }
+      @media (max-width: 1000px) {
+        u-body h1,
+        .u-body h2,
+        .u-body h3,
+        .u-body h4,
+        .u-body h5,
+        .u-body h6 {
+          padding: 0px 29px;
+        }
+        .box-center {
+          font-size: 24px;
+        }
+        .boxes {
+          height: 225px;
+        }
+      }
+      @media (max-width: 700px) {
+        .boxes {
+          height: 300px;
+          width: 42%;
+        }
+
+        .box-center {
+          font-size: 36px;
+        }
+      }
+      @media (max-width: 550px) {
+        .boxes {
+          height: 250px;
+          width: 40%;
+        }
+
+        .box-center {
+          font-size: 24px;
+        }
+        u-body h1,
+        .u-body h2,
+        .u-body h3,
+        .u-body h4,
+        .u-body h5,
+        .u-body h6 {
+          padding: 0px 3px;
+        }
+        .a-btn {
+          font-size: 23px;
+          width: 27%;
+          height: 15%;
+        }
+      }
+      @media (max-width: 400px) {
+        .boxes {
+          height: 175px;
+          width: 40%;
+        }
+
+        .box-center {
+          font-size: 16px;
+        }
+        u-body h1,
+        .u-body h2,
+        .u-body h3,
+        .u-body h4,
+        .u-body h5,
+        .u-body h6 {
+          padding: 0px 23px;
+        }
+        .a-btn {
+          font-size: 10px;
+        }
+        .a-btn-2 {
+          font-size: 18px;
+        }
+        ul {
+          padding-left: 0;
+        }
+      }
+    </style>
+    <div class="hero-wraper">
+      <img
+        src="images/favicon.png"
+        alt=""
+        style="
+          width: 58px;
+          height: 56px;
+          border-radius: 50%;
+          background-color: #f6c21e;
+          padding: 3px;
+        "
+      />
+      <h1 class="hero" style="padding-left: 10px">Our Services</h1>
+    </div>
+    <ul class="box-grid">
+      <li class="boxes yellow">
+        <h3 class="box-center">CONTRACT WITH A SCHOOL</h3>
+        <a href="Contact.html" class="a-btn">&#128933;</a>
+      </li>
+      <li class="boxes pink">
+        <h3 class="box-center">ELEMENTARY SCHOOL TUTORING</h3>
+        <a href="spElementary.html" class="a-btn">&#128933;</a>
+      </li>
+      <li class="boxes purple">
+        <h3 class="box-center">MIDDLE SCHOOL TUTORING</h3>
+        <a href="spMiddleSchool.html" class="a-btn">&#128933;</a>
+      </li>
+      <li class="boxes pink">
+        <h3 class="box-center">HIGH SCHOOL TUTORING</h3>
+        <a href="spHighschool.html" class="a-btn">&#128933;</a>
+      </li>
+      <li class="boxes purple">
+        <h3 class="box-center">SIGN UP NOW</h3>
+        <a href="Sign up.html" class="a-btn-2">&#129122;</a>
+      </li>
+      <li class="boxes yellow">
+        <h3 class="box-center">STATE & DISTRICT TEST PREP</h3>
+        <a href="spStateTestPrep.html" class="a-btn">&#128933;</a>
+      </li>
+      <li class="boxes pink">
+        <h3 class="box-center">ACT/SAT TEST PREP</h3>
+        <a href="spActSatTestPrep.html" class="a-btn">&#128933;</a>
+      </li>
+      <li class="boxes yellow">
+        <h3 class="box-center">
+          EDUCATIONAL DIAGNOSTIC TESTING <br /><span class="box-span"
+            >**COMING SOON...</span
           >
-            <span class="u-file-icon u-icon u-icon-1"
-              ><img src="images/4341050.png" alt=""
-            /></span>
-            <h3 class="u-text u-text-default u-text-2">Packages</h3>
-            <p class="u-text u-text-default u-text-3">
-              We have a variety of online tutoring packages beginning in 30, 60
-              and 90-minute increments to meet your needs. Don't see a package?
-              Email us at shiningbrighttutors@gmail.com to schedule a call so
-              that we may customize a package for you!
-            </p>
-            <div class="package-buttons">
-              <a
-                href="Contact.html"
-                class="u-border-1 u-border-black u-btn u-button-style u-hover-black u-none u-text-black u-text-hover-white u-btn-1"
-                >contact us</a
-              >
-              <a
-                href="https://shiningbrighttutors.tutorwithpearl.com/storefront"
-                class="u-border-1 u-border-black u-btn u-button-style u-hover-black u-none u-text-black u-text-hover-white u-btn-1 u-btn-now"
-                target="_blank"
-                >Book now</a
-              >
-              <a
-                href="https://forms.gle/eFFdhjrrdggAGPEu6"
-                class="u-border-1 u-border-black u-btn u-button-style u-hover-black u-none u-text-black u-text-hover-white u-btn-1 u-btn-req"
-                target="_blank"
-                >request call</a
-              >
-            </div>
-          </div>
-          <img
-            src="images/side logo for services.jpg"
-            alt=""
-            style="margin-left: 40px; border-radius: 10px"
-            class="side-logo-laptop"
-          />
-        </div>
-
-        <div
-          class="u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-list u-list-1"
-          style="margin-top: 60px; margin-right: auto; width: 100%"
-        >
-          <div class="u-repeater u-repeater-1">
-            <div
-              class="u-align-left u-container-style u-list-item u-palette-5-light-2 u-repeater-item u-list-item-1"
-              style="background-color: white"
-            >
-              <div
-                class="u-container-layout u-similar-container u-valign-top u-container-layout-2"
-              >
-                <span class="u-file-icon u-icon u-icon-2"
-                  ><img src="images/167707.png" alt=""
-                /></span>
-                <h4 class="u-text u-text-default u-text-4">
-                  Elementary School Tutoring
-                </h4>
-                <p class="u-text u-text-default u-text-5">
-                  Do you have a child in Elementary School (K-5) that needs
-                  additional support in class? We can help! Shining Bright
-                  Tutors specializes in supporting elementary-aged students in a
-                  variety of areas including, but not limited, to Phonics,
-                  Reading, Writing, Spelling, Grammar, Math, Social Studies, and
-                  Science.
-                </p>
-              </div>
-            </div>
-            <div
-              class="u-align-left u-container-style u-list-item u-palette-5-light-2 u-repeater-item u-video-cover"
-              style="background-color: white"
-            >
-              <div
-                class="u-container-layout u-similar-container u-valign-top u-container-layout-3"
-              >
-                <span class="u-file-icon u-icon u-icon-3"
-                  ><img src="images/3750011.png" alt=""
-                /></span>
-                <h4 class="u-text u-text-default u-text-6">
-                  Middle School Tutoring
-                </h4>
-                <p class="u-text u-text-default u-text-7">
-                  When children reach Middle School, the subjects start to get
-                  tougher. It can often be a challenge to support your child
-                  when they need it most. That is why we are here to support
-                  you. Shining Bright Tutors specializes in supporting middle
-                  school-aged students in a variety of areas including, but not
-                  limited, to Reading, Writing, Math, Social Studies, and
-                  Science.
-                </p>
-              </div>
-            </div>
-            <div
-              class="u-align-left u-container-style u-list-item u-palette-5-light-2 u-repeater-item u-video-cover"
-              style="background-color: white"
-            >
-              <div
-                class="u-container-layout u-similar-container u-valign-top u-container-layout-4"
-              >
-                <span class="u-file-icon u-icon u-icon-4"
-                  ><img src="images/1344761.png" alt=""
-                /></span>
-                <h4 class="u-text u-text-default u-text-8">
-                  High School Tutoring
-                </h4>
-                <p class="u-text u-text-default u-text-9">
-                  High School is a time when students are determining the path
-                  they will take once they graduate. We are here to work with
-                  high school subjects such as English I-IV, Algebra 1 & 2,
-                  Geometry, Calculus, World History, etc. When you sign up, we
-                  can discuss what you are looking for so that we may help.
-                </p>
-              </div>
-            </div>
-            <div
-              class="u-align-left u-container-style u-list-item u-palette-5-light-2 u-repeater-item u-video-cover"
-              style="background-color: white"
-            >
-              <div
-                class="u-container-layout u-similar-container u-valign-top u-container-layout-5"
-              >
-                <span class="u-file-icon u-icon u-icon-5"
-                  ><img src="images/2097055.png" alt=""
-                /></span>
-                <h4 class="u-text u-text-default u-text-10">Test Prep</h4>
-                <p class="u-text u-text-default u-text-11">
-                  Standardized Testing is prevalent in our schools. This
-                  includes State Assessments and District Assessments such as
-                  the IOWA test, NWEA (MAP), SSAT, and ISEE. This even includes
-                  the SAT and ACT. We want to provide your child with what they
-                  need to be successful.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+        </h3>
+      </li>
+    </ul>
 
     <footer
       class="u-align-center u-clearfix u-footer u-grey-80 u-footer"
